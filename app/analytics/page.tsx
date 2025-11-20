@@ -20,8 +20,64 @@ import {
     AlertCircle,
     Lightbulb,
 } from "lucide-react";
+import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from "recharts";
 
 export default function AnalyticsPage() {
+    // Mock data for sessions over time (last 30 days)
+    const sessionsOverTimeData = [
+        { date: "Oct 20", sessions: 2, completed: 2, failed: 0 },
+        { date: "Oct 23", sessions: 3, completed: 3, failed: 0 },
+        { date: "Oct 26", sessions: 2, completed: 1, failed: 1 },
+        { date: "Oct 29", sessions: 4, completed: 4, failed: 0 },
+        { date: "Nov 1", sessions: 3, completed: 3, failed: 0 },
+        { date: "Nov 4", sessions: 5, completed: 5, failed: 0 },
+        { date: "Nov 7", sessions: 4, completed: 3, failed: 1 },
+        { date: "Nov 10", sessions: 6, completed: 6, failed: 0 },
+        { date: "Nov 13", sessions: 5, completed: 5, failed: 0 },
+        { date: "Nov 16", sessions: 8, completed: 7, failed: 1 },
+    ];
+
+    // Mock data for lead generation funnel
+    const funnelData = [
+        { stage: "Sessions Started", value: 42, percentage: 100 },
+        { stage: "Data Collected", value: 40, percentage: 95 },
+        { stage: "Leads Generated", value: 38, percentage: 90 },
+        { stage: "High Quality", value: 36, percentage: 86 },
+    ];
+
+    // Mock data for average scrape time
+    const scrapeTimeData = [
+        { type: "Website", avgTime: 1.8 },
+        { type: "FB Post", avgTime: 2.1 },
+        { type: "FB Group", avgTime: 3.2 },
+        { type: "FB Comment", avgTime: 2.8 },
+        { type: "RAG Browser", avgTime: 4.5 },
+    ];
+
+    // Mock data for error distribution
+    const errorData = [
+        { name: "Network", value: 2, color: "#ef4444" },
+        { name: "Timeout", value: 1, color: "#f59e0b" },
+        { name: "Rate Limit", value: 3, color: "#eab308" },
+    ];
+
+    // Mock data for cost per lead
+    const costPerLeadData = [
+        { month: "Jul", cost: 0.08 },
+        { month: "Aug", cost: 0.07 },
+        { month: "Sep", cost: 0.06 },
+        { month: "Oct", cost: 0.05 },
+        { month: "Nov", cost: 0.04 },
+    ];
+
+    // Mock data for lead quality distribution
+    const qualityDistData = [
+        { score: "9-10", count: 542 },
+        { score: "7-8", count: 387 },
+        { score: "5-6", count: 234 },
+        { score: "3-4", count: 71 },
+    ];
+
     // Mock metrics data
     const metrics = [
         {
@@ -150,26 +206,67 @@ export default function AnalyticsPage() {
                             title="Sessions Over Time"
                             description="Last 30 days"
                         >
-                            <div className="h-64 flex items-center justify-center bg-gradient-to-br from-primary/5 to-purple-500/5 rounded-lg border border-border/50">
-                                <div className="text-center text-muted-foreground">
-                                    <Activity className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                                    <p className="text-sm">Line chart visualization</p>
-                                    <p className="text-xs mt-1">Showing upward trend</p>
-                                </div>
-                            </div>
+                            <ResponsiveContainer width="100%" height={240}>
+                                <AreaChart data={sessionsOverTimeData}>
+                                    <defs>
+                                        <linearGradient id="colorSessions" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3} />
+                                            <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0} />
+                                        </linearGradient>
+                                    </defs>
+                                    <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
+                                    <XAxis
+                                        dataKey="date"
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <YAxis
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <Tooltip />
+                                    <Area
+                                        type="monotone"
+                                        dataKey="sessions"
+                                        stroke="hsl(var(--primary))"
+                                        fillOpacity={1}
+                                        fill="url(#colorSessions)"
+                                        name="Total Sessions"
+                                    />
+                                    <Line
+                                        type="monotone"
+                                        dataKey="completed"
+                                        stroke="#22c55e"
+                                        strokeWidth={2}
+                                        name="Completed"
+                                    />
+                                </AreaChart>
+                            </ResponsiveContainer>
                         </ChartCard>
 
                         <ChartCard
                             title="Lead Generation Funnel"
                             description="Conversion stages"
                         >
-                            <div className="h-64 flex items-center justify-center bg-gradient-to-br from-green-500/5 to-blue-500/5 rounded-lg border border-border/50">
-                                <div className="text-center text-muted-foreground">
-                                    <TrendingUp className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                                    <p className="text-sm">Funnel chart visualization</p>
-                                    <p className="text-xs mt-1">94.5% success rate</p>
-                                </div>
-                            </div>
+                            <ResponsiveContainer width="100%" height={240}>
+                                <BarChart data={funnelData} layout="horizontal">
+                                    <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
+                                    <XAxis
+                                        type="number"
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <YAxis
+                                        type="category"
+                                        dataKey="stage"
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                        width={120}
+                                    />
+                                    <Tooltip />
+                                    <Bar dataKey="value" fill="hsl(var(--primary))" name="Count" />
+                                </BarChart>
+                            </ResponsiveContainer>
                         </ChartCard>
                     </div>
                 </TabsContent>
@@ -178,27 +275,60 @@ export default function AnalyticsPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <ChartCard
                             title="Average Scrape Time"
-                            description="Performance trend"
+                            description="Performance by scraper type"
                         >
-                            <div className="h-64 flex items-center justify-center bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-lg border border-border/50">
-                                <div className="text-center text-muted-foreground">
-                                    <Clock className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                                    <p className="text-sm">Bar chart visualization</p>
-                                    <p className="text-xs mt-1">Avg: 2.4 minutes</p>
-                                </div>
-                            </div>
+                            <ResponsiveContainer width="100%" height={240}>
+                                <BarChart data={scrapeTimeData}>
+                                    <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
+                                    <XAxis
+                                        dataKey="type"
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <YAxis
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                        label={{ value: 'Minutes', angle: -90, position: 'insideLeft', fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <Tooltip />
+                                    <Bar dataKey="avgTime" fill="#3b82f6" name="Avg Time (min)" />
+                                </BarChart>
+                            </ResponsiveContainer>
                         </ChartCard>
 
                         <ChartCard
                             title="Error Rate by Type"
                             description="Failure analysis"
                         >
-                            <div className="h-64 flex items-center justify-center bg-gradient-to-br from-red-500/5 to-orange-500/5 rounded-lg border border-border/50">
-                                <div className="text-center text-muted-foreground">
-                                    <AlertCircle className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                                    <p className="text-sm">Pie chart visualization</p>
-                                    <p className="text-xs mt-1">5.5% error rate</p>
-                                </div>
+                            <ResponsiveContainer width="100%" height={240}>
+                                <PieChart>
+                                    <Pie
+                                        data={errorData}
+                                        cx="50%"
+                                        cy="50%"
+                                        labelLine={false}
+                                        label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                                        outerRadius={80}
+                                        fill="#8884d8"
+                                        dataKey="value"
+                                    >
+                                        {errorData.map((entry, index) => (
+                                            <Cell key={`cell-${index}`} fill={entry.color} />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip />
+                                </PieChart>
+                            </ResponsiveContainer>
+                            <div className="flex justify-center gap-4 mt-4">
+                                {errorData.map((item, index) => (
+                                    <div key={index} className="flex items-center gap-2">
+                                        <div
+                                            className="w-3 h-3 rounded-full"
+                                            style={{ backgroundColor: item.color }}
+                                        />
+                                        <span className="text-xs text-muted-foreground">{item.name}</span>
+                                    </div>
+                                ))}
                             </div>
                         </ChartCard>
                     </div>
@@ -208,28 +338,53 @@ export default function AnalyticsPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <ChartCard
                             title="Cost Per Lead"
-                            description="ROI analysis"
+                            description="ROI trend over time"
                         >
-                            <div className="h-64 flex items-center justify-center bg-gradient-to-br from-yellow-500/5 to-green-500/5 rounded-lg border border-border/50">
-                                <div className="text-center text-muted-foreground">
-                                    <DollarSign className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                                    <p className="text-sm">Line chart visualization</p>
-                                    <p className="text-xs mt-1">$0.04 per lead</p>
-                                </div>
-                            </div>
+                            <ResponsiveContainer width="100%" height={240}>
+                                <LineChart data={costPerLeadData}>
+                                    <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
+                                    <XAxis
+                                        dataKey="month"
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <YAxis
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                        label={{ value: 'USD ($)', angle: -90, position: 'insideLeft', fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <Tooltip />
+                                    <Line
+                                        type="monotone"
+                                        dataKey="cost"
+                                        stroke="#22c55e"
+                                        strokeWidth={2}
+                                        name="Cost/Lead"
+                                    />
+                                </LineChart>
+                            </ResponsiveContainer>
                         </ChartCard>
 
                         <ChartCard
                             title="Lead Quality Distribution"
-                            description="Quality scores"
+                            description="Quality scores breakdown"
                         >
-                            <div className="h-64 flex items-center justify-center bg-gradient-to-br from-purple-500/5 to-pink-500/5 rounded-lg border border-border/50">
-                                <div className="text-center text-muted-foreground">
-                                    <Target className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                                    <p className="text-sm">Distribution chart</p>
-                                    <p className="text-xs mt-1">Avg: 8.7/10</p>
-                                </div>
-                            </div>
+                            <ResponsiveContainer width="100%" height={240}>
+                                <BarChart data={qualityDistData}>
+                                    <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
+                                    <XAxis
+                                        dataKey="score"
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <YAxis
+                                        className="text-xs"
+                                        tick={{ fill: 'hsl(var(--muted-foreground))' }}
+                                    />
+                                    <Tooltip />
+                                    <Bar dataKey="count" fill="#a855f7" name="Leads" />
+                                </BarChart>
+                            </ResponsiveContainer>
                         </ChartCard>
                     </div>
                 </TabsContent>

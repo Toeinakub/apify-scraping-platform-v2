@@ -81,22 +81,22 @@
 .dark {
   --background: oklch(0.1 0.03 260); /* Deep Navy/Black */
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.13 0.03 260);
+  --card: oklch(0.15 0.03 260); /* Increased from 0.13 to 0.15 for better contrast */
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.13 0.03 260);
+  --popover: oklch(0.15 0.03 260);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.6 0.18 250); /* Bright Blue/Violet */
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.2 0.05 260);
+  --secondary: oklch(0.25 0.05 260); /* Increased from 0.2 to 0.25 */
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.2 0.05 260);
-  --muted-foreground: oklch(0.7 0 0);
-  --accent: oklch(0.2 0.05 260);
+  --muted: oklch(0.25 0.05 260); /* Increased from 0.2 to 0.25 */
+  --muted-foreground: oklch(0.75 0 0); /* Increased from 0.7 to 0.75 for better readability */
+  --accent: oklch(0.25 0.05 260); /* Increased from 0.2 to 0.25 */
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.4 0.2 25);
-  --border: oklch(0.2 0.05 260);
-  --input: oklch(0.2 0.05 260);
-  --ring: oklch(0.6 0.18 250);
+  --destructive: oklch(0.5 0.22 25); /* Increased brightness for better visibility */
+  --border: oklch(0.3 0.05 260); /* Increased from 0.2 to 0.3 for 50% better contrast */
+  --input: oklch(0.3 0.05 260); /* Increased from 0.2 to 0.3 for 50% better contrast */
+  --ring: oklch(0.65 0.18 250); /* Slightly brighter ring */
   --chart-1: oklch(0.6 0.18 250);
   --chart-2: oklch(0.6 0.18 180);
   --chart-3: oklch(0.6 0.18 300);
@@ -106,10 +106,10 @@
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.6 0.18 250);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.2 0.05 260);
+  --sidebar-accent: oklch(0.25 0.05 260); /* Increased from 0.2 to 0.25 */
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.2 0.05 260);
-  --sidebar-ring: oklch(0.6 0.18 250);
+  --sidebar-border: oklch(0.3 0.05 260); /* Increased from 0.2 to 0.3 */
+  --sidebar-ring: oklch(0.65 0.18 250);
 }
 
 @layer base {
@@ -131,7 +131,7 @@
   .glass {
     @apply bg-background/60 backdrop-blur-lg border border-border/50;
   }
-  
+
   /* Animation utilities */
   @keyframes grid-move {
     0% { transform: translate3d(0,0,0); }
@@ -140,4 +140,44 @@
   .animate-grid {
     animation: grid-move 30s linear infinite;
   }
+}
+
+/* Recharts Tooltip Styling */
+.recharts-default-tooltip {
+  background-color: oklch(0.15 0.03 260) !important;
+  border: 1px solid oklch(0.3 0.05 260) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem !important;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3) !important;
+}
+
+.dark .recharts-default-tooltip {
+  background-color: oklch(0.15 0.03 260) !important;
+  border-color: oklch(0.3 0.05 260) !important;
+}
+
+.recharts-tooltip-label {
+  color: oklch(0.985 0 0) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 0.875rem !important;
+}
+
+.recharts-tooltip-item {
+  color: oklch(0.85 0 0) !important;
+  font-size: 0.875rem !important;
+  padding: 0.125rem 0 !important;
+}
+
+.recharts-tooltip-item-name {
+  color: oklch(0.75 0 0) !important;
+}
+
+.recharts-tooltip-item-separator {
+  margin: 0 0.5rem !important;
+}
+
+.recharts-tooltip-item-value {
+  color: oklch(0.985 0 0) !important;
+  font-weight: 600 !important;
 }

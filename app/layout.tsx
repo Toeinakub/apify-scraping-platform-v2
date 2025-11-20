@@ -52,7 +52,6 @@ export default function RootLayout({
                   <Link href="/sessions" className="transition-colors hover:text-foreground/80 text-foreground/60">Sessions</Link>
                   <Link href="/analytics" className="transition-colors hover:text-foreground/80 text-foreground/60">Analytics</Link>
                   <Link href="/mock/dashboards" className="transition-colors hover:text-foreground/80 text-foreground/60">Insights</Link>
-                  <Link href="/mock" className="transition-colors hover:text-foreground/80 text-foreground/60">Mock</Link>
                 </div>
               </div>
             </nav>

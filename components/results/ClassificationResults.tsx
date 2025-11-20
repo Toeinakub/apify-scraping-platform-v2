@@ -79,7 +79,10 @@ export default function ClassificationResults({
 
   // Render Summary Cards
   const renderSummarySection = () => {
-    if (sourceType === 'GENERAL_GROUP') {
+    // Check if it's a Group (any group type) or a Page
+    const isGroup = sourceType.includes('GROUP');
+
+    if (isGroup) {
       return (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {summary.topIntents && summary.topIntents.length > 0 && (
@@ -185,7 +188,9 @@ export default function ClassificationResults({
 
   // Render Table based on sourceType
   const renderTable = () => {
-    if (sourceType === 'GENERAL_GROUP') {
+    const isGroup = sourceType.includes('GROUP');
+
+    if (isGroup) {
       return (
         <Table>
           <TableHeader>
@@ -232,45 +237,45 @@ export default function ClassificationResults({
                       <Badge>{item.classification.primaryIntent}</Badge>
                     )}
                   </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1">
-                    {item.classification.houseZones?.slice(0, 2).map((zone: string, i: number) => (
-                      <Badge key={i} variant="outline" className="text-xs">{zone}</Badge>
-                    ))}
-                    {item.classification.houseZones?.length > 2 && (
-                      <Badge variant="outline" className="text-xs">+{item.classification.houseZones.length - 2}</Badge>
-                    )}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1">
-                    {item.classification.painPoints?.slice(0, 2).map((pp: string, i: number) => (
-                      <Badge key={i} variant="outline" className="text-xs">{pp}</Badge>
-                    ))}
-                    {item.classification.painPoints?.length > 2 && (
-                      <Badge variant="outline" className="text-xs">+{item.classification.painPoints.length - 2}</Badge>
-                    )}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1">
-                    {item.classification.materialCategories?.slice(0, 2).map((mat: string, i: number) => (
-                      <Badge key={i} variant="outline" className="text-xs">{mat}</Badge>
-                    ))}
-                    {item.classification.materialCategories?.length > 2 && (
-                      <Badge variant="outline" className="text-xs">+{item.classification.materialCategories.length - 2}</Badge>
-                    )}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1">
-                    {item.classification.journeyStages?.slice(0, 1).map((stage: string, i: number) => (
-                      <Badge key={i} variant="outline" className="text-xs">{stage}</Badge>
-                    ))}
-                  </div>
-                </TableCell>
-              </TableRow>
-            );
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
+                      {item.classification.houseZones?.slice(0, 2).map((zone: string, i: number) => (
+                        <Badge key={i} variant="outline" className="text-xs">{zone}</Badge>
+                      ))}
+                      {item.classification.houseZones?.length > 2 && (
+                        <Badge variant="outline" className="text-xs">+{item.classification.houseZones.length - 2}</Badge>
+                      )}
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
+                      {item.classification.painPoints?.slice(0, 2).map((pp: string, i: number) => (
+                        <Badge key={i} variant="outline" className="text-xs">{pp}</Badge>
+                      ))}
+                      {item.classification.painPoints?.length > 2 && (
+                        <Badge variant="outline" className="text-xs">+{item.classification.painPoints.length - 2}</Badge>
+                      )}
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
+                      {item.classification.materialCategories?.slice(0, 2).map((mat: string, i: number) => (
+                        <Badge key={i} variant="outline" className="text-xs">{mat}</Badge>
+                      ))}
+                      {item.classification.materialCategories?.length > 2 && (
+                        <Badge variant="outline" className="text-xs">+{item.classification.materialCategories.length - 2}</Badge>
+                      )}
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
+                      {item.classification.journeyStages?.slice(0, 1).map((stage: string, i: number) => (
+                        <Badge key={i} variant="outline" className="text-xs">{stage}</Badge>
+                      ))}
+                    </div>
+                  </TableCell>
+                </TableRow>
+              );
             })}
           </TableBody>
         </Table>
@@ -324,26 +329,26 @@ export default function ClassificationResults({
                       ))}
                     </div>
                   </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1">
-                    {item.classification.models?.slice(0, 2).map((model: string, i: number) => (
-                      <Badge key={i} variant="outline">{model}</Badge>
-                    ))}
-                    {item.classification.models?.length > 2 && (
-                      <Badge variant="outline">+{item.classification.models.length - 2}</Badge>
-                    )}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1">
-                    {item.classification.valueProps?.slice(0, 2).map((vp: string, i: number) => (
-                      <Badge key={i} variant="secondary" className="text-xs">{vp}</Badge>
-                    ))}
-                    {item.classification.valueProps?.length > 2 && (
-                      <Badge variant="secondary" className="text-xs">+{item.classification.valueProps.length - 2}</Badge>
-                    )}
-                  </div>
-                </TableCell>
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
+                      {item.classification.models?.slice(0, 2).map((model: string, i: number) => (
+                        <Badge key={i} variant="outline">{model}</Badge>
+                      ))}
+                      {item.classification.models?.length > 2 && (
+                        <Badge variant="outline">+{item.classification.models.length - 2}</Badge>
+                      )}
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
+                      {item.classification.valueProps?.slice(0, 2).map((vp: string, i: number) => (
+                        <Badge key={i} variant="secondary" className="text-xs">{vp}</Badge>
+                      ))}
+                      {item.classification.valueProps?.length > 2 && (
+                        <Badge variant="secondary" className="text-xs">+{item.classification.valueProps.length - 2}</Badge>
+                      )}
+                    </div>
+                  </TableCell>
                   <TableCell>
                     <Badge variant="outline">{item.classification.contentType}</Badge>
                   </TableCell>
@@ -415,7 +420,7 @@ export default function ClassificationResults({
               <div>
                 <h3 className="font-semibold mb-3">Classification:</h3>
                 <div className="space-y-3">
-                  {sourceType === 'GENERAL_GROUP' ? (
+                  {sourceType.includes('GROUP') ? (
                     <>
                       {selectedItem.classification.primaryIntent && (
                         <div>

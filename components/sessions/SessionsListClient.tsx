@@ -376,76 +376,76 @@ export default function SessionsListClient({
 
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1 min-w-0 pr-8">
-                    <div className="flex items-center gap-3 mb-3 flex-wrap">
-                      <div className="flex items-center gap-2 text-primary">
-                        {getScraperIcon(session.type)}
-                        <h3 className="text-lg font-semibold truncate group-hover:text-primary transition-colors">
-                          {session.title}
-                        </h3>
+                      <div className="flex items-center gap-3 mb-3 flex-wrap">
+                        <div className="flex items-center gap-2 text-primary">
+                          {getScraperIcon(session.type)}
+                          <h3 className="text-lg font-semibold truncate group-hover:text-primary transition-colors">
+                            {session.title}
+                          </h3>
+                        </div>
+                        <Badge variant="outline" className="shrink-0">
+                          {getScraperTypeLabel(session.type)}
+                        </Badge>
+                        {getStatusBadge(session.status)}
                       </div>
-                      <Badge variant="outline" className="shrink-0">
-                        {getScraperTypeLabel(session.type)}
-                      </Badge>
-                      {getStatusBadge(session.status)}
-                    </div>
 
-                    <p className="text-sm text-muted-foreground mb-4 truncate">
-                      {(session.parameters as any)?.url || (
-                        <span className="italic">No URL specified</span>
-                      )}
-                    </p>
-
-                    <div className="flex items-center gap-6 text-sm text-muted-foreground flex-wrap">
-                      <span className="flex items-center gap-1.5">
-                        <Clock className="h-4 w-4" />
-                        Started{' '}
-                        {formatDistanceToNow(
-                          new Date(session.startedAt),
-                          {
-                            addSuffix: true,
-                          }
+                      <p className="text-sm text-muted-foreground mb-4 truncate">
+                        {(session.parameters as any)?.url || (
+                          <span className="italic">No URL specified</span>
                         )}
-                      </span>
-                      {session.status === 'COMPLETED' && (
+                      </p>
+
+                      <div className="flex items-center gap-6 text-sm text-muted-foreground flex-wrap">
                         <span className="flex items-center gap-1.5">
-                          <CheckCircle2 className="h-4 w-4 text-green-500" />
-                          {session.resultCount} results
+                          <Clock className="h-4 w-4" />
+                          Started{' '}
+                          {formatDistanceToNow(
+                            new Date(session.startedAt),
+                            {
+                              addSuffix: true,
+                            }
+                          )}
                         </span>
-                      )}
-                      {session.status === 'RUNNING' && (
-                        <span className="flex items-center gap-1.5 text-blue-500">
-                          <Loader2 className="h-4 w-4 animate-spin" />
-                          In progress...
-                        </span>
-                      )}
-                      {session.status === 'FAILED' && session.errorMessage && (
-                        <span className="flex items-center gap-1.5 text-red-500">
-                          <XCircle className="h-4 w-4" />
-                          {session.errorMessage.length > 50
-                            ? session.errorMessage.substring(0, 50) + '...'
-                            : session.errorMessage}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {session.completedAt && (
-                    <div className="text-right text-sm text-muted-foreground shrink-0">
-                      <div className="font-medium">Completed</div>
-                      <div>
-                        {formatDistanceToNow(
-                          new Date(session.completedAt),
-                          {
-                            addSuffix: true,
-                          }
+                        {session.status === 'COMPLETED' && (
+                          <span className="flex items-center gap-1.5">
+                            <CheckCircle2 className="h-4 w-4 text-green-500" />
+                            {session.resultCount} results
+                          </span>
+                        )}
+                        {session.status === 'RUNNING' && (
+                          <span className="flex items-center gap-1.5 text-blue-500">
+                            <Loader2 className="h-4 w-4 animate-spin" />
+                            In progress...
+                          </span>
+                        )}
+                        {session.status === 'FAILED' && session.errorMessage && (
+                          <span className="flex items-center gap-1.5 text-red-500">
+                            <XCircle className="h-4 w-4" />
+                            {session.errorMessage.length > 50
+                              ? session.errorMessage.substring(0, 50) + '...'
+                              : session.errorMessage}
+                          </span>
                         )}
                       </div>
                     </div>
-                  )}
-                </div>
-              </Card>
-            </Link>
-          </div>
+
+                    {session.completedAt && (
+                      <div className="text-right text-sm text-muted-foreground shrink-0">
+                        <div className="font-medium">Completed</div>
+                        <div>
+                          {formatDistanceToNow(
+                            new Date(session.completedAt),
+                            {
+                              addSuffix: true,
+                            }
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </Card>
+              </Link>
+            </div>
           ))}
         </div>
       )}
