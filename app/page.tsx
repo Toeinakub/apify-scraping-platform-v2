@@ -1,36 +1,486 @@
 "use client";
 
 import Link from 'next/link';
+import { useMemo, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import HeroSection from '@/components/ui/hero-section-dark';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, BarChart3, Database, Globe, Lock, Zap, CheckCircle2 } from 'lucide-react';
-import { DashboardPreview } from '@/components/ui/dashboard-preview';
+import AuroraBackground from '@/components/ui/aurora-background';
+import { ArrowRight, BarChart3, Database, Globe, RefreshCw, Download, ExternalLink, TrendingUp } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+
+// Import real data - Groups
+import designGroupClassify from '@/testing-classification-results/facebook_group_classify_คนดีไซน์.json';
+import decorGroupClassify from '@/testing-classification-results/facebook_group_classify_แต่งบ้าน.json';
+import qaGroupClassify from '@/testing-classification-results/facebook_group_classify_ถามตอบ.json';
+import showcaseGroupClassify from '@/testing-classification-results/facebook_group_classify_อวดบ้าน.json';
+
+// Import real data - Pages
+import diamondPostClassify from '@/testing-classification-results/facebook_post_classify_diamond.json';
+import jorakayPostClassify from '@/testing-classification-results/facebook_post_classify_jorakay.json';
+import scgbrandPostClassify from '@/testing-classification-results/facebook_post_classify_scgbrand.json';
+import sheraPostClassify from '@/testing-classification-results/facebook_post_classify_shera.json';
+
+const COLORS = {
+  primary: 'hsl(var(--primary))',
+  blue: '#3b82f6',
+  green: '#22c55e',
+  yellow: '#f59e0b',
+  purple: '#a855f7',
+  pink: '#ec4899',
+  cyan: '#06b6d4',
+};
 
 export default function HomePage() {
+  const [activeTab, setActiveTab] = useState<'groups' | 'pages'>('groups');
+
+  // Process Group Data
+  const groupData = useMemo(() => {
+    const allGroupData = [
+      designGroupClassify,
+      decorGroupClassify,
+      qaGroupClassify,
+      showcaseGroupClassify,
+    ];
+
+    const intentMap = new Map<string, number>();
+    allGroupData.forEach((group: any) => {
+      group.summary?.topIntents?.forEach((intentItem: any) => {
+        const current = intentMap.get(intentItem.intent) || 0;
+        intentMap.set(intentItem.intent, current + intentItem.count);
+      });
+    });
+
+    const painPointMap = new Map<string, number>();
+    allGroupData.forEach((group: any) => {
+      group.summary?.topPainPoints?.forEach((item: any) => {
+        const current = painPointMap.get(item.painPoint) || 0;
+        painPointMap.set(item.painPoint, current + item.count);
+      });
+    });
+
+    const zoneMap = new Map<string, number>();
+    allGroupData.forEach((group: any) => {
+      group.summary?.topHouseZones?.forEach((zoneItem: any) => {
+        const current = zoneMap.get(zoneItem.zone) || 0;
+        zoneMap.set(zoneItem.zone, current + zoneItem.count);
+      });
+    });
+
+    let totalPosts = 0;
+    const uniqueUsers = new Set<string>();
+    allGroupData.forEach((group: any) => {
+      totalPosts += group.classifiedItems?.length || 0;
+      group.classifiedItems?.forEach((item: any) => {
+        const authorName = item.originalData?.author?.name;
+        if (authorName) {
+          uniqueUsers.add(authorName);
+        }
+      });
+    });
+
+    const sortedIntents = Array.from(intentMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+
+    const sortedPainPoints = Array.from(painPointMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+
+    const sortedZones = Array.from(zoneMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+
+    return {
+      totalPosts,
+      uniqueUsers: uniqueUsers.size,
+      topIntent: sortedIntents[0] || ['ASK_ADVICE', 0],
+      topZone: sortedZones[0] || ['GENERAL', 0],
+      topPainPoint: sortedPainPoints[0] || ['DURABILITY', 0],
+      intentDistribution: sortedIntents.map(([name, value]) => ({ name, value })),
+      painPointDistribution: sortedPainPoints.map(([name, value]) => ({ name, value })),
+      zoneDistribution: sortedZones.map(([name, value], index) => ({
+        name,
+        value,
+        fill: [COLORS.blue, COLORS.green, COLORS.yellow, COLORS.purple, COLORS.pink][index],
+      })),
+    };
+  }, []);
+
+  // Process Page Data
+  const pageData = useMemo(() => {
+    const allPageData = [
+      diamondPostClassify,
+      jorakayPostClassify,
+      scgbrandPostClassify,
+      sheraPostClassify,
+    ];
+
+    const productMap = new Map<string, number>();
+    allPageData.forEach((page: any) => {
+      page.summary?.topProducts?.forEach((item: any) => {
+        const current = productMap.get(item.product) || 0;
+        productMap.set(item.product, current + item.count);
+      });
+    });
+
+    const modelMap = new Map<string, number>();
+    allPageData.forEach((page: any) => {
+      page.summary?.topModels?.forEach((item: any) => {
+        const current = modelMap.get(item.model) || 0;
+        modelMap.set(item.model, current + item.count);
+      });
+    });
+
+    const valuePropMap = new Map<string, number>();
+    allPageData.forEach((page: any) => {
+      page.summary?.topValueProps?.forEach((item: any) => {
+        const current = valuePropMap.get(item.valueProp) || 0;
+        valuePropMap.set(item.valueProp, current + item.count);
+      });
+    });
+
+    const totalPosts = allPageData.reduce((sum, page: any) => {
+      return sum + (page.classifiedItems?.length || 0);
+    }, 0);
+
+    const sortedProducts = Array.from(productMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+
+    const sortedModels = Array.from(modelMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+
+    const sortedValueProps = Array.from(valuePropMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+
+    return {
+      totalPosts,
+      topProduct: sortedProducts[0] || ['วัสดุก่อสร้าง', 0],
+      topModel: sortedModels[0] || ['Air Cool', 0],
+      productDistribution: sortedProducts.map(([name, value]) => ({ name, value })),
+      modelDistribution: sortedModels.map(([name, value]) => ({ name, value })),
+      valuePropDistribution: sortedValueProps.map(([name, value], index) => ({
+        name,
+        value,
+        fill: [COLORS.green, COLORS.blue, COLORS.yellow, COLORS.purple, COLORS.cyan][index],
+      })),
+    };
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <HeroSection
-        title="AI-Powered Intelligence"
-        subtitle={{ regular: "Turn web data into ", gradient: "actionable insights" }}
-        description="The complete platform for scraping, classifying, and analyzing web data at scale. No coding required."
-        ctaText="Start Free Trial"
-        ctaHref="/dashboard"
-        gridOptions={{
-          lightLineColor: 'rgba(0,0,0,0.1)',
-          darkLineColor: 'rgba(255,255,255,0.1)',
-          opacity: 0.5,
-          cellSize: 60,
-          angle: 65
-        }}
-        className="w-full pb-0"
-      />
+      {/* Hero Section with Aurora Background */}
+      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Aurora Background */}
+        <AuroraBackground />
 
-      <div className="relative z-10 -mt-20 md:-mt-32 lg:-mt-40 px-4">
-        <DashboardPreview />
-      </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 text-center py-20">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+              AI-Powered Intelligence
+            </h1>
+            <p className="text-2xl md:text-3xl text-muted-foreground">
+              Turn web data into{' '}
+              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                actionable insights
+              </span>
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              The complete platform for scraping, classifying, and analyzing web data at scale. No coding required.
+            </p>
+            <div className="pt-6">
+              <Link href="/sessions">
+                <Button size="lg" className="text-lg px-8 py-6">
+                  View Sessions
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Marketing Insights Section */}
+      <section className="py-16 container mx-auto px-4">
+        <div className="mb-8">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-3xl font-bold mb-2">Marketing Insights</h2>
+              <p className="text-muted-foreground">Real-time analysis from Facebook Groups & Pages</p>
+            </div>
+            <div className="flex gap-3">
+              <Button variant="outline" size="sm">
+                <RefreshCw className="w-4 h-4 mr-2" />
+                Sync
+              </Button>
+              <Button variant="outline" size="sm">
+                <Download className="w-4 h-4 mr-2" />
+                Export
+              </Button>
+              <Link href="/mock/dashboards">
+                <Button size="sm">
+                  View Full Dashboard
+                  <ExternalLink className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Tabs */}
+          <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as any)} className="w-full">
+            <TabsList className="grid w-full max-w-md grid-cols-2 mb-8">
+              <TabsTrigger value="groups">Facebook Groups</TabsTrigger>
+              <TabsTrigger value="pages">Facebook Pages</TabsTrigger>
+            </TabsList>
+
+            {/* Facebook Groups Tab */}
+            <TabsContent value="groups" className="space-y-6">
+              {/* Stats Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Total Posts</p>
+                      <h3 className="text-4xl font-bold">{groupData.totalPosts}</h3>
+                      <p className="text-sm text-green-500 flex items-center gap-1">
+                        <TrendingUp className="w-4 h-4" />
+                        From 4 groups
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Top Pain Point</p>
+                      <h3 className="text-2xl font-bold uppercase">{groupData.topPainPoint[0]}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {groupData.topPainPoint[1]} mentions
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Top Intent</p>
+                      <h3 className="text-2xl font-bold uppercase">{groupData.topIntent[0]}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {groupData.topIntent[1]} mentions
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Top Zone</p>
+                      <h3 className="text-2xl font-bold uppercase">{groupData.topZone[0]}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {groupData.topZone[1]} mentions
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Charts Row */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardHeader>
+                    <CardTitle>Intent Distribution</CardTitle>
+                    <CardDescription>Top 5 user intentions</CardDescription>
+                  </CardHeader>
+                  <CardContent className="min-h-[320px]">
+                    <ResponsiveContainer width="100%" height={280}>
+                      <BarChart data={groupData.intentDistribution}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                        <XAxis
+                          dataKey="name"
+                          tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 12 }}
+                          angle={-15}
+                          textAnchor="end"
+                          height={80}
+                        />
+                        <YAxis tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 12 }} />
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: 'rgba(0,0,0,0.9)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '8px',
+                            color: '#fff',
+                          }}
+                        />
+                        <Bar dataKey="value" fill={COLORS.blue} radius={[8, 8, 0, 0]} />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardHeader>
+                    <CardTitle>House Zone Distribution</CardTitle>
+                    <CardDescription>Top 5 areas discussed</CardDescription>
+                  </CardHeader>
+                  <CardContent className="min-h-[320px] flex items-center justify-center">
+                    <ResponsiveContainer width="100%" height={280}>
+                      <PieChart>
+                        <Pie
+                          data={groupData.zoneDistribution}
+                          cx="50%"
+                          cy="50%"
+                          labelLine={false}
+                          label={(entry) => `${entry.name}: ${((entry.percent || 0) * 100).toFixed(0)}%`}
+                          outerRadius={90}
+                          dataKey="value"
+                        >
+                          {groupData.zoneDistribution.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={entry.fill} />
+                          ))}
+                        </Pie>
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: 'rgba(0,0,0,0.9)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '8px',
+                            color: '#fff',
+                          }}
+                        />
+                      </PieChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+
+            {/* Facebook Pages Tab */}
+            <TabsContent value="pages" className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Total Posts</p>
+                      <h3 className="text-4xl font-bold">{pageData.totalPosts}</h3>
+                      <p className="text-sm text-green-500 flex items-center gap-1">
+                        <TrendingUp className="w-4 h-4" />
+                        From 4 pages
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Top Product</p>
+                      <h3 className="text-xl font-bold">{pageData.topProduct[0]}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {pageData.topProduct[1]} mentions
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Top Model</p>
+                      <h3 className="text-xl font-bold">{pageData.topModel[0]}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {pageData.topModel[1]} mentions
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Total Pages</p>
+                      <h3 className="text-4xl font-bold">4</h3>
+                      <p className="text-sm text-muted-foreground">Brand pages</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardHeader>
+                    <CardTitle>Product Distribution</CardTitle>
+                    <CardDescription>Top 5 products</CardDescription>
+                  </CardHeader>
+                  <CardContent className="min-h-[320px]">
+                    <ResponsiveContainer width="100%" height={280}>
+                      <BarChart data={pageData.productDistribution}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                        <XAxis
+                          dataKey="name"
+                          tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 12 }}
+                          angle={-15}
+                          textAnchor="end"
+                          height={80}
+                        />
+                        <YAxis tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 12 }} />
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: 'rgba(0,0,0,0.9)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '8px',
+                            color: '#fff',
+                          }}
+                        />
+                        <Bar dataKey="value" fill={COLORS.green} radius={[8, 8, 0, 0]} />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card/50 backdrop-blur border-border/50">
+                  <CardHeader>
+                    <CardTitle>Value Proposition</CardTitle>
+                    <CardDescription>Top value props</CardDescription>
+                  </CardHeader>
+                  <CardContent className="min-h-[320px] flex items-center justify-center">
+                    <ResponsiveContainer width="100%" height={280}>
+                      <PieChart>
+                        <Pie
+                          data={pageData.valuePropDistribution}
+                          cx="50%"
+                          cy="50%"
+                          labelLine={false}
+                          label={(entry) => `${entry.name}: ${((entry.percent || 0) * 100).toFixed(0)}%`}
+                          outerRadius={90}
+                          dataKey="value"
+                        >
+                          {pageData.valuePropDistribution.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={entry.fill} />
+                          ))}
+                        </Pie>
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: 'rgba(0,0,0,0.9)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '8px',
+                            color: '#fff',
+                          }}
+                        />
+                      </PieChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </section>
 
       {/* Features Grid */}
       <section className="py-24 container mx-auto px-4">
@@ -79,7 +529,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Value Props / How it works */}
+      {/* Workflow Section */}
       <section className="py-24 bg-muted/10">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -141,72 +591,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 container mx-auto px-4">
-        <div className="relative rounded-3xl overflow-hidden border border-border/50 bg-gradient-to-b from-muted/50 to-background p-12 text-center">
-          <div className="absolute inset-0 bg-grid-white/5 [mask-image:linear-gradient(to_bottom,white,transparent)]" />
-          <div className="relative z-10 max-w-2xl mx-auto space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">Ready to unlock the web?</h2>
-            <p className="text-lg text-muted-foreground">
-              Join thousands of developers and data scientists building the future of intelligence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/dashboard">
-                <Button size="lg" className="w-full sm:w-auto text-lg px-8">
-                  Get Started for Free
-                </Button>
-              </Link>
-              <Link href="/mock/demo">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8">
-                  Book a Demo
-                </Button>
-              </Link>
-            </div>
-            <p className="text-sm text-muted-foreground pt-4">
-              No credit card required • 14-day free trial • Cancel anytime
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="border-t border-border/40 py-12 bg-muted/5">
-        <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 font-bold text-xl">
-              <div className="h-6 w-6 rounded-md bg-primary flex items-center justify-center text-primary-foreground text-xs">AI</div>
-              AI Lead Intelligence
+      <footer className="border-t border-border/40 py-8 bg-muted/5">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <div className="h-6 w-6 rounded-md bg-primary flex items-center justify-center text-primary-foreground text-xs font-bold">
+                AI
+              </div>
+              <span className="font-bold">AI Lead Intelligence</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Empowering businesses with next-generation web data intelligence.
+              © 2024 AI Lead Intelligence. All rights reserved.
             </p>
           </div>
-          <div>
-            <h4 className="font-semibold mb-4">Product</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground">Features</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Pricing</Link></li>
-              <li><Link href="#" className="hover:text-foreground">API</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground">Documentation</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Blog</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Community</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground">Privacy</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Terms</Link></li>
-            </ul>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-          © 2024 AI Lead Intelligence. All rights reserved.
         </div>
       </footer>
     </div>

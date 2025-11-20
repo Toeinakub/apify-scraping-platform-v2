@@ -32,19 +32,19 @@ import sheraPostClassify from '@/testing-classification-results/facebook_post_cl
 export default function HomePage() {
   // Process real data
   const processedData = useMemo(() => {
-    // Combine all classifications
+    // Combine all classifications - access classifiedItems array from each JSON
     const allGroupClassifications = [
-      ...designGroupClassify,
-      ...decorGroupClassify,
-      ...qaGroupClassify,
-      ...showcaseGroupClassify,
+      ...(designGroupClassify.classifiedItems || []),
+      ...(decorGroupClassify.classifiedItems || []),
+      ...(qaGroupClassify.classifiedItems || []),
+      ...(showcaseGroupClassify.classifiedItems || []),
     ];
 
     const allPostClassifications = [
-      ...diamondPostClassify,
-      ...jorakayPostClassify,
-      ...scgbrandPostClassify,
-      ...sheraPostClassify,
+      ...(diamondPostClassify.classifiedItems || []),
+      ...(jorakayPostClassify.classifiedItems || []),
+      ...(scgbrandPostClassify.classifiedItems || []),
+      ...(sheraPostClassify.classifiedItems || []),
     ];
 
     const allClassifications = [...allGroupClassifications, ...allPostClassifications];

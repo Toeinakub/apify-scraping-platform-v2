@@ -203,6 +203,20 @@ const getMockSession = (id: string) => {
     return sessions[id] || null;
 };
 
+// Tell Next.js to generate these routes at build time
+export async function generateStaticParams() {
+    return [
+        { id: 'diamond' },
+        { id: 'jorakay' },
+        { id: 'scgbrand' },
+        { id: 'shera' },
+        { id: 'design-group' },
+        { id: 'decor-group' },
+        { id: 'qa-group' },
+        { id: 'showcase-group' },
+    ];
+}
+
 export default async function SessionDetailPage({
     params,
 }: {
