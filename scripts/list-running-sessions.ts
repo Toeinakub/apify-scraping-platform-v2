@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-import type { Prisma } from '@prisma/client';
 import type { Session as AppSession } from '@/types';
 
 type ListedSession = {
@@ -10,7 +9,7 @@ type ListedSession = {
   apifyRunId: string | null;
   createdAt: Date;
   startedAt: Date | null;
-  parameters: Prisma.JsonValue;
+  parameters: any;
 };
 
 /**
