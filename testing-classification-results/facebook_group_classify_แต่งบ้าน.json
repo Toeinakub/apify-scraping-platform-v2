@@ -1,0 +1,401 @@
+{
+  "summary": {
+    "topIntents": [
+      {
+        "count": 13,
+        "intent": "SHOW_OFF"
+      },
+      {
+        "count": 2,
+        "intent": "ASK_ADVICE"
+      },
+      {
+        "count": 1,
+        "intent": "SHARE_KNOWLEDGE"
+      }
+    ],
+    "topPersonas": [
+      {
+        "count": 14,
+        "persona": "HOMEOWNER"
+      }
+    ],
+    "topHouseZones": [
+      {
+        "zone": "GENERAL",
+        "count": 3
+      },
+      {
+        "zone": "LIVING_ROOM",
+        "count": 3
+      },
+      {
+        "zone": "BEDROOM",
+        "count": 3
+      },
+      {
+        "zone": "FLOOR",
+        "count": 2
+      }
+    ],
+    "topPainPoints": [
+      {
+        "count": 1,
+        "painPoint": "DIRT"
+      }
+    ],
+    "topJourneyStages": [
+      {
+        "count": 4,
+        "stage": "DESIGNING"
+      },
+      {
+        "count": 2,
+        "stage": "SELECTING_MATERIAL"
+      },
+      {
+        "count": 2,
+        "stage": "POST_CONSTRUCTION_ISSUE"
+      }
+    ],
+    "topMaterialCategories": [
+      {
+        "count": 2,
+        "category": "FLOOR_TILE"
+      }
+    ]
+  },
+  "totalItems": 19,
+  "classifiedItems": [
+    {
+      "originalText": "# โต๊ะเราต้องคิ้วท์ที่สุด",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "“￼พระถังชินจังพอทนพระอุลตร้าแมนอาจจะยังน้า😂😅",
+      "classification": {
+        "intents": [],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "null",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ไอเดียดีมากๆ เป็นห้องเก็บของที่ถูกต้อง ใส่เลขไปเลย จะได้จดได้ \nทิชชู่เปียก อยู่กล่องที่17 \nไม้เกาหลัง กล่องที่ 25 \nอะไรแบบนี้ ดีมากๆๆๆ",
+      "classification": {
+        "intents": [
+          "SHARE_KNOWLEDGE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "SHARE_KNOWLEDGE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "# พ่อดูอยู่ 🤣",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1167059268899577/\",\"time\":\"2025-11-20T03:44:16.000Z\",\"user\":{\"id\":\"100001787222882\",\"name\":\"Karn Ruanpan\"},\"text\":\"\",\"textReferences\":[{\"url\":\"https://www.facebook.com/hashtag/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99\",\"id\":\"185231171627980\"},{\"url\":\"https://www.facebook.com/hashtag/home?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/home\",\"id\":\"340707642716147\"},{\"url\":\"https://www.facebook.com/hashtag/minimal?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/minimal\",\"id\":\"549720068382748\"}],\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NzA1OTI2ODg5OTU3Nw==\",\"sharedPost\":{\"pageName\":{\"id\":\"100078269920436\",\"name\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์\",\"profileUrl\":\"https://www.facebook.com/people/%F0%9D%99%86%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%A3-%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%AE-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C/100078269920436/\",\"profilePic\":\"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/490320993_666846942600964_8045784110897112251_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xYchiEeLk3sQ7kNvwEfcaOi&_nc_oc=AdkfTN65bQj-O96NPZfkpufn_t_YKNlG7qO0PhDDqLBsERn_3te3yHGTZdXwKByRrYM&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=inECGuoHhTnwrMm26lauuQ&oh=00_AfgGGiW8RKfJ4wJ22bk-gjJ2K7CS6QFL0FsA4nv2oHOb1g&oe=692489E8\"},\"url\":\"https://www.facebook.com/permalink.php?story_fbid=pfbid0FiAR7SLiqFNpWgZP3wQTaf8LopSiEHF2wins19aJpAhcfCL8oKcxGPqxgQXBwbiml&id=100078269920436\",\"time\":\"2025-11-20T03:41:24.000Z\",\"timestamp\":1763610084,\"user\":{\"id\":\"100078269920436\",\"name\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์\",\"profileUrl\":\"https://www.facebook.com/people/%F0%9D%99%86%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%A3-%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%AE-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C/100078269920436/\",\"profilePic\":\"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/490320993_666846942600964_8045784110897112251_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xYchiEeLk3sQ7kNvwEfcaOi&_nc_oc=AdkfTN65bQj-O96NPZfkpufn_t_YKNlG7qO0PhDDqLBsERn_3te3yHGTZdXwKByRrYM&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=inECGuoHhTnwrMm26lauuQ&oh=00_AfgGGiW8RKfJ4wJ22bk-gjJ2K7CS6QFL0FsA4nv2oHOb1g&oe=692489E8\"},\"text\":\"😍 เช้าวันนี้ค่ะ ติดสติกเกอร์ลายเลย วันนี้อากาศหนาวแล้ว ลมหนาวพัดตลอดเลย ไม่เปิดแอร์มา 3 วัน โซล่าเซลล์ช่วยตลอดเลย \\n\\n😊 สามีบอกว่ากระเบื้องพื้นลายไม้เหลือเยอะ ตัดสินใจปูกระเบื้องหน้าบ้าน และหน้าต่างวงกลมค่ะ ดูที่โฮมโปรก็ยังมี ไว้มาถ่ายแบบเต็มๆตอนปูเสร็จนะคะ \\n\\nอยากแนะนำพื้นกระเบื้องลายไม้อันนี้สวย เดี๋ยวแปะภาพในเม้นให้นะคะ \\n\\n#บ้าน #Home #Minimal\",\"textReferences\":[{\"url\":\"https://www.facebook.com/hashtag/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99\",\"id\":\"185231171627980\"},{\"url\":\"https://www.facebook.com/hashtag/home?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/home\",\"id\":\"340707642716147\"},{\"url\":\"https://www.facebook.com/hashtag/minimal?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/minimal\",\"id\":\"549720068382748\"}],\"media\":[{\"thumbnail\":\"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/585799136_833531175932539_5490310103341496976_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Iuna9NZG_N8Q7kNvwGLyRzD&_nc_oc=AdniDM9TFuAKLrkPiOwjmYy5gnmPlfznRBPYzdherpXZbtq0UoSjMx0TjhNmzFyVzUE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=inECGuoHhTnwrMm26lauuQ&oh=00_Afja-LqyHj0Bs1WfvEA8nLNKKCw3vMD-OlmkN2Ke_K33KA&oe=69248DBB\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/585799136_833531175932539_5490310103341496976_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Iuna9NZG_N8Q7kNvwGLyRzD&_nc_oc=AdniDM9TFuAKLrkPiOwjmYy5gnmPlfznRBPYzdherpXZbtq0UoSjMx0TjhNmzFyVzUE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=inECGuoHhTnwrMm26lauuQ&oh=00_Afja-LqyHj0Bs1WfvEA8nLNKKCw3vMD-OlmkN2Ke_K33KA&oe=69248DBB\",\"height\":701,\"width\":526},\"__isMedia\":\"Photo\",\"accent_color\":\"FF84836E\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=833531169265873&set=a.165651169387213&type=3\",\"id\":\"833531169265873\",\"ocrText\":\"May be an image of sliding door\"}]},\"reactionLikeCount\":1,\"id\":\"UzpfSTEwMDAwMTc4NzIyMjg4MjpWSzoxMTY3MDU5MjY4ODk5NTc3\",\"legacyId\":\"1167059268899577\",\"likesCount\":1,\"sharesCount\":0,\"commentsCount\":2,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/220582823547231/permalink/1167059268899577/?comment_id=1167059395566231\",\"id\":\"Y29tbWVudDoxMTY3MDU5MjY4ODk5NTc3XzExNjcwNTkzOTU1NjYyMzE=\",\"feedbackId\":\"ZmVlZGJhY2s6MTE2NzA1OTI2ODg5OTU3N18xMTY3MDU5Mzk1NTY2MjMx\",\"date\":\"2025-11-20T03:44:29.000Z\",\"text\":\"สวย\",\"profileUrl\":\"https://www.facebook.com/people/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%AA%E0%B8%B2-%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%82/pfbid0nTtgTcRhtqjTm4aLRpgf3iXjLNTrEQwCxAEFZ1bYjNkwyu1JqxLKVvjCs5i1TXDAl/\",\"profilePicture\":\"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/449730522_767277465486375_2409888609866648222_n.jpg?stp=c104.0.417.417a_cp0_dst-jpg_s32x32_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=3EfkgzutQYkQ7kNvwF0-tAM&_nc_oc=AdmQdU1UHbc-H5Kq2ZEuTkhSnev8EUILqBVJjpl0SGd1qyJcFDTvPMKNzLnrobXsJvo&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=inECGuoHhTnwrMm26lauuQ&oh=00_Afh_cTv52flv9NLHClKXQ7AWxn6UqDkmPjw30_NqGrlYig&oe=6924AA96\",\"profileId\":\"pfbid0nTtgTcRhtqjTm4aLRpgf3iXjLNTrEQwCxAEFZ1bYjNkwyu1JqxLKVvjCs5i1TXDAl\",\"profileName\":\"วันวิสา สมบูรณ์สุข\",\"likesCount\":\"0\",\"threadingDepth\":0}],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "FLOOR"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "FLOOR_TILE"
+        ]
+      }
+    },
+    {
+      "originalText": "อย่าเพิ่งคิดว่าบ้านเราไม่มินิมอล ลองเปลี่ยนม่าน กับเอาผ้าคลุมโซฟาก๊อนนนนน",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "LIVING_ROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1163559742582863/\",\"time\":\"2025-11-20T02:50:14.000Z\",\"user\":{\"id\":\"1741891476\",\"name\":\"คุณครูแสนซน สุดสวย\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2MzU1OTc0MjU4Mjg2Mw==\",\"reactionLikeCount\":2,\"id\":\"UzpfSTE3NDE4OTE0NzY6Vks6MTE2MzU1OTc0MjU4Mjg2Mw==\",\"legacyId\":\"1163559742582863\",\"likesCount\":2,\"sharesCount\":0,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": null,
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1164089165863254/\",\"time\":\"2025-11-20T02:48:58.000Z\",\"user\":{\"id\":\"100034809220063\",\"name\":\"Yok Ponphan\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NDA4OTE2NTg2MzI1NA==\",\"reactionLikeCount\":1,\"id\":\"UzpfSTEwMDAzNDgwOTIyMDA2MzpWSzoxMTY0MDg5MTY1ODYzMjU0\",\"legacyId\":\"1164089165863254\",\"attachments\":[{\"thumbnail\":\"https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/579093034_1585897525913873_351523784561703196_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=tJUPr2w6VYoQ7kNvwHRnN-9&_nc_oc=AdlxnZM-tztoAyVz_Ab6o2seQiOrS0cTiT8SmkLpp0oUbK9MZroneQzc3w3uQUCNvlQ&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=r2MD5KVUsyXA8bO24GjLLQ&oh=00_AfgasMl82Fo-jdtp8dqcvvOaB9ACjXV8iS1klKGo-Y3fRQ&oe=69249CFD\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/579093034_1585897525913873_351523784561703196_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=tJUPr2w6VYoQ7kNvwHRnN-9&_nc_oc=AdlxnZM-tztoAyVz_Ab6o2seQiOrS0cTiT8SmkLpp0oUbK9MZroneQzc3w3uQUCNvlQ&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=r2MD5KVUsyXA8bO24GjLLQ&oh=00_AfgasMl82Fo-jdtp8dqcvvOaB9ACjXV8iS1klKGo-Y3fRQ&oe=69249CFD\",\"height\":720,\"width\":516},\"__isMedia\":\"Photo\",\"accent_color\":\"FF000000\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=1585897522580540&set=gm.1164089165863254&type=3\",\"id\":\"1585897522580540\",\"ocrText\":\"May be a graphic of text\"}],\"likesCount\":1,\"sharesCount\":0,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1165143795757791/\",\"time\":\"2025-11-20T02:47:12.000Z\",\"user\":{\"id\":\"100025940963726\",\"name\":\"Suphamat Minny\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NTE0Mzc5NTc1Nzc5MQ==\",\"reactionLikeCount\":6,\"id\":\"UzpfSTEwMDAyNTk0MDk2MzcyNjpWSzoxMTY1MTQzNzk1NzU3Nzkx\",\"legacyId\":\"1165143795757791\",\"attachments\":[{\"thumbnail\":\"https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/584624314_1954669068741106_1192892839616866643_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8hMxJTppIvoQ7kNvwHIgY6D&_nc_oc=AdkxHWc7A0GMsbMx2aLfJPTIcgaOP5yODPFL5hTH8gH9obDmihmloKWW-GcqK4TudkY&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=r2MD5KVUsyXA8bO24GjLLQ&oh=00_Afhz5U0yODdrQ_YCGZ4IS_DqwSIscQiZSjeJI6G9KVPIcg&oe=69247C59\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/584624314_1954669068741106_1192892839616866643_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8hMxJTppIvoQ7kNvwHIgY6D&_nc_oc=AdkxHWc7A0GMsbMx2aLfJPTIcgaOP5yODPFL5hTH8gH9obDmihmloKWW-GcqK4TudkY&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=r2MD5KVUsyXA8bO24GjLLQ&oh=00_Afhz5U0yODdrQ_YCGZ4IS_DqwSIscQiZSjeJI6G9KVPIcg&oe=69247C59\",\"height\":540,\"width\":960},\"__isMedia\":\"Photo\",\"accent_color\":\"FF0E0E0E\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=1954669062074440&set=gm.1165143795757791&type=3\",\"id\":\"1954669062074440\",\"ocrText\":\"May be an image of food\"}],\"likesCount\":6,\"sharesCount\":0,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": null,
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ขออนุญาติครับ🙏🏻 อยากได้พิกัดเก้าอี้สำหรับโต๊ะทานข้าวหน่อยครับ โต๊ะผมเป็นกระจกทั้งบานขาเป็นไม้สีเข้มๆ หาเก้าอี้ยากมากครับ 🙏🏻 ขอบคุณล่วงหน้านะคับ😅🙏🏻",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ขออนุญาติค่า ห้องแบบนี้ควรแต่งยังไงดีคะ ย้ายมุมเตียงดีไหม จะเอาตู้เย็นเข้าห้องด้วยค่ะ มีเหมียวๆด้วย รบกวนแนะนำหน่อยค่ะ หรือสมาชิกท่านไหนพอมีรูปตัวอย่างห้องแบบนี้ที่แต่งแล้วไหมคะ ขอบคุณมากค่ะ🙏🏻",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1166424008963103/\",\"time\":\"2025-11-20T02:42:14.000Z\",\"user\":{\"id\":\"100007176400103\",\"name\":\"Bua Julaluck\"},\"text\":\"\",\"topReactionsCount\":2,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQyNDAwODk2MzEwMw==\",\"reactionLikeCount\":40,\"reactionLoveCount\":1,\"id\":\"UzpfSTEwMDAwNzE3NjQwMDEwMzpWSzoxMTY2NDI0MDA4OTYzMTAz\",\"legacyId\":\"1166424008963103\",\"attachments\":[{\"mediaset_token\":\"pcb.1166424008963103\",\"url\":\"https://www.facebook.com/media/set/?set=pcb.1166424008963103&type=1\",\"comet_product_tag_feed_overlay_renderer\":null},{\"thumbnail\":\"https://scontent.fagc3-2.fna.fbcdn.net/v/t39.30808-6/586224211_4051439301771910_3465061406311364326_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=DoOLIDcaMhYQ7kNvwGOsgY_&_nc_oc=AdmUYLpSr61V_nv65r38g0HVO1MqStwhUKQVul-fVx9E-hZjXB0Wiu0y9cKw1ILlrz8&_nc_zt=23&_nc_ht=scontent.fagc3-2.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_AfhpGN8SfVmKPrSvXQbZ36Pm2rTmjRtLufP2aEaVGujwog&oe=692488F9\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fagc3-2.fna.fbcdn.net/v/t39.30808-6/586224211_4051439301771910_3465061406311364326_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=DoOLIDcaMhYQ7kNvwGOsgY_&_nc_oc=AdmUYLpSr61V_nv65r38g0HVO1MqStwhUKQVul-fVx9E-hZjXB0Wiu0y9cKw1ILlrz8&_nc_zt=23&_nc_ht=scontent.fagc3-2.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_AfhpGN8SfVmKPrSvXQbZ36Pm2rTmjRtLufP2aEaVGujwog&oe=692488F9\",\"height\":443,\"width\":590},\"id\":\"4051428798439627\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100007176400103\"},\"ocrText\":\"May be an image of living room and indoors\"},{\"thumbnail\":\"https://scontent.fagc3-2.fna.fbcdn.net/v/t39.30808-6/586297011_4051439351771905_362313290547707975_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=_-XlVsoJXK8Q7kNvwEX1HxD&_nc_oc=Adkai8OHGXvJkrJCJRV5tVKd4oy9Yw7KGD3_nNUQlPLnbNaZao9AkXZtj9fr34JkAjM&_nc_zt=23&_nc_ht=scontent.fagc3-2.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_Afjvb-ZjrmWODpL9o3m1bVZVOuAGFQGVOqgvdDakT0HybQ&oe=69248BF1\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fagc3-2.fna.fbcdn.net/v/t39.30808-6/586297011_4051439351771905_362313290547707975_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=_-XlVsoJXK8Q7kNvwEX1HxD&_nc_oc=Adkai8OHGXvJkrJCJRV5tVKd4oy9Yw7KGD3_nNUQlPLnbNaZao9AkXZtj9fr34JkAjM&_nc_zt=23&_nc_ht=scontent.fagc3-2.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_Afjvb-ZjrmWODpL9o3m1bVZVOuAGFQGVOqgvdDakT0HybQ&oe=69248BF1\",\"height\":443,\"width\":590},\"id\":\"4051428875106286\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100007176400103\"},\"ocrText\":\"May be an image of indoors and living room\"},{\"thumbnail\":\"https://scontent.fagc3-1.fna.fbcdn.net/v/t39.30808-6/584716251_4051439361771904_993321856148857194_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=TPzinqHDF6gQ7kNvwFRyjnV&_nc_oc=AdlXECaR0doPIfF_VugGkIswYbaRq_hsYuXwwg8yJpS3V1KjAFAV4CKNathaHeT7hVU&_nc_zt=23&_nc_ht=scontent.fagc3-1.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_AfgQmcRI_Q5kmCmbvx30k9lLyPt50JB9y4vZ753lZTiH2g&oe=6924AC53\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fagc3-1.fna.fbcdn.net/v/t39.30808-6/584716251_4051439361771904_993321856148857194_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=TPzinqHDF6gQ7kNvwFRyjnV&_nc_oc=AdlXECaR0doPIfF_VugGkIswYbaRq_hsYuXwwg8yJpS3V1KjAFAV4CKNathaHeT7hVU&_nc_zt=23&_nc_ht=scontent.fagc3-1.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_AfgQmcRI_Q5kmCmbvx30k9lLyPt50JB9y4vZ753lZTiH2g&oe=6924AC53\",\"height\":443,\"width\":590},\"id\":\"4051428865106287\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100007176400103\"},\"ocrText\":\"May be an image of bedroom\"},{\"thumbnail\":\"https://scontent.fagc3-1.fna.fbcdn.net/v/t39.30808-6/584421414_4051439305105243_2058073654704217299_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=JqQvIjsGqrIQ7kNvwH7AzNO&_nc_oc=AdlY-tp5ojopN_P7u8MyH6RbxCbAyFa-DhjRbgfYfseV9TDG37rCuUsKiP8Jc9qakQs&_nc_zt=23&_nc_ht=scontent.fagc3-1.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_AfjC7zKkBaQgWCCuy4b_ye0O4R-Pw-MMu7FMGx09_in1Sw&oe=6924AA61\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fagc3-1.fna.fbcdn.net/v/t39.30808-6/584421414_4051439305105243_2058073654704217299_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=JqQvIjsGqrIQ7kNvwH7AzNO&_nc_oc=AdlY-tp5ojopN_P7u8MyH6RbxCbAyFa-DhjRbgfYfseV9TDG37rCuUsKiP8Jc9qakQs&_nc_zt=23&_nc_ht=scontent.fagc3-1.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_AfjC7zKkBaQgWCCuy4b_ye0O4R-Pw-MMu7FMGx09_in1Sw&oe=6924AA61\",\"height\":443,\"width\":590},\"id\":\"4051428791772961\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100007176400103\"},\"ocrText\":\"May be an image of indoors and bedroom\"}],\"likesCount\":41,\"sharesCount\":4,\"commentsCount\":17,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/220582823547231/permalink/1166424008963103/?comment_id=1167034535568717\",\"id\":\"Y29tbWVudDoxMTY2NDI0MDA4OTYzMTAzXzExNjcwMzQ1MzU1Njg3MTc=\",\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQyNDAwODk2MzEwM18xMTY3MDM0NTM1NTY4NzE3\",\"date\":\"2025-11-20T02:51:58.000Z\",\"text\":\"ได้โปรดเอา ทีวีไปไว้ตรงหน้าต่างเถอะกลัวเผลอไปถีบ แล้วก็วางชั้นเป็นแนวตั้งน่าจะมีที่วางเยอะกว่าค่ะ\",\"profileUrl\":\"https://www.facebook.com/pornprapha.khanpun\",\"profilePicture\":\"https://scontent.fagc3-2.fna.fbcdn.net/v/t39.30808-1/550176269_3980419312169742_5870689799449305964_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=zsCUDXX6-pwQ7kNvwGQBPa0&_nc_oc=AdkonJ-buRnifSpht3QuHsXugSTxBlT_y-Z12pjaO3xwUQ4zkcEhadHHQC7dEmYcd2M&_nc_zt=24&_nc_ht=scontent.fagc3-2.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_Afh90qxYjoRQxP2IVvaJ4JTj6Tj9NhWqhz5IVeOE4asBpg&oe=6924AFEC\",\"profileId\":\"100006051367688\",\"profileName\":\"Pornprapha Khanpun\",\"likesCount\":\"6\",\"threadingDepth\":0},{\"commentUrl\":\"https://www.facebook.com/groups/220582823547231/permalink/1166424008963103/?comment_id=1167054945566676\",\"id\":\"Y29tbWVudDoxMTY2NDI0MDA4OTYzMTAzXzExNjcwNTQ5NDU1NjY2NzY=\",\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQyNDAwODk2MzEwM18xMTY3MDU0OTQ1NTY2Njc2\",\"date\":\"2025-11-20T03:34:31.000Z\",\"text\":\"ทีวีปลายเท้าตื่นมาจะตกใจนะคับ5555\",\"profileUrl\":\"https://www.facebook.com/wi.phd.phe.chr.ta.phud.hey\",\"profilePicture\":\"https://scontent.fagc3-1.fna.fbcdn.net/v/t39.30808-1/559385115_1986990578509920_7905431347328499893_n.jpg?stp=c14.0.1157.1157a_cp0_dst-jpg_s32x32_tt6&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=BxNQV4Ak1-8Q7kNvwF-gcTH&_nc_oc=Adk6SKQEDJtorJrnobmV8R_amxrBBs7qnRr6-MAQSjZtBmaoOx25zxPwyi40U8gaSz8&_nc_zt=24&_nc_ht=scontent.fagc3-1.fna&_nc_gid=ZpPIXDgGcb5logDyojLMGA&oh=00_Afhnp95-VQ0K3r6_KgPeM5HxaZ7IT-Np78M7y0wLQ8D4fQ&oe=6924AA58\",\"profileId\":\"100015969906134\",\"profileName\":\"ไวพด เพชรตาพึด เฮ๊ย\",\"likesCount\":\"4\",\"threadingDepth\":0}],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "LIVING_ROOM",
+          "BEDROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ให้ Ai ทำภาพบ้านสไตล์จีน ไม่ใช่บ้านแบบที่อยากได้ แต่ทำออกมาแล้วสวยเฉยเลย",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1166991708906333/\",\"time\":\"2025-11-20T01:28:00.000Z\",\"user\":{\"id\":\"100004117209226\",\"name\":\"ต่าย อรุณี\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2Njk5MTcwODkwNjMzMw==\",\"reactionLikeCount\":13,\"id\":\"UzpfSTEwMDAwNDExNzIwOTIyNjpWSzoxMTY2OTkxNzA4OTA2MzMz\",\"legacyId\":\"1166991708906333\",\"attachments\":[{\"thumbnail\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/586333228_3616101051870433_4257182773315627197_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=AbUx_MpQnWUQ7kNvwHUpAFp&_nc_oc=AdlQ_bqbQ6Tc-txLT1v4y_zC8so3Jkm83O-0VKGFnbuHRxFq43Ak4V-0_wUnhpTGogg&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_AfhQTSHdBxgL7JnJRmhZV5SvWhOkYxF-JemW6Uu1oQDJrA&oe=69247B5A\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/586333228_3616101051870433_4257182773315627197_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=AbUx_MpQnWUQ7kNvwHUpAFp&_nc_oc=AdlQ_bqbQ6Tc-txLT1v4y_zC8so3Jkm83O-0VKGFnbuHRxFq43Ak4V-0_wUnhpTGogg&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_AfhQTSHdBxgL7JnJRmhZV5SvWhOkYxF-JemW6Uu1oQDJrA&oe=69247B5A\",\"height\":527,\"width\":526},\"__isMedia\":\"Photo\",\"accent_color\":\"FF9C867B\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=3616101048537100&set=gm.1166991708906333&type=3\",\"id\":\"3616101048537100\",\"ocrText\":\"May be an image of bed, indoors and bedroom\"}],\"likesCount\":13,\"sharesCount\":0,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1166628758942628/\",\"time\":\"2025-11-19T13:16:40.000Z\",\"user\":{\"id\":\"100001787222882\",\"name\":\"Karn Ruanpan\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjYyODc1ODk0MjYyOA==\",\"reactionLikeCount\":3,\"id\":\"UzpfSTEwMDAwMTc4NzIyMjg4MjpWSzoxMTY2NjI4NzU4OTQyNjI4\",\"legacyId\":\"1166628758942628\",\"attachments\":[{\"style_list\":[\"messenger_generic_template\",\"fb_shorts\",\"fallback\"],\"style_infos\":[{\"__typename\":\"FBShortsShareAttachmentStyleInfo\",\"fb_shorts_story\":{\"encrypted_tracking\":\"AZUyEGI6YJpJ6-x9AKeq-vz_YruSBMMvyL4WTF3fCmhH_OFbHWjhal5OQvGo2PEy6n0IRRFy1CSsc84BmOuKhmO1GxovGLv0Wey-abol1Y4duzS0FlCnJNrxnQiv0b0DprSaMGRnKxTiuztjafZsoWmm6OnXq0UDRYQkIcONSdTU2_qU2mgaXdyGLhaIlSDqFz0TAw2GTSDt4sS6fyhs5bim1yJInvzSr2KJqmtg4VuseDszUHGAdiTsEQihAdaKN1utKgc-hWE5ZMPO91uXQbXWwN3dY6MX6EGboVg7kg2wozKh2dpbwuoZNN7MPmL64uwOXCgl5oDKLdSs2cQAXr32ovR2j9iwKsk_ZLekEx2G0xh-kACpgF_tnBrb3mEXVunD5piN-czo8_kGf0j86pdf6nuXzNZbIqb6LltAq99F6YZc-7hI_hnSkgqfmcHEhlQz-_yjE9W20XgJTfvLjVFroBI0vZdi286yEWgUAG8_VPDsr9-kdZJytm5xYp2nheP-dJwrInf2lshcToDQK8PO4OIVm0m7Ed3XlCpIzsZBjKU8oBA9ZM1WirMOzNm2IAz0mjlJB4y5s1JrTtsVWaW0XhBCGiSkQQeZlYvoSX02n9mpJZgwx6TyD0E8eEV-pMJeFqK8w29p-mJflB_Ka35MJg8NJZGOsoPzU7Ts95BCIzMfw-H6uQLFZ1XIA76e2IrtVJtPIX8z75-uMTw_frLX7f1Cr0MxbKCdrDWGVtL5jOnTmHQmnuFbIz6UhB8K4vlZQbVyKCmHZ0EC-kIfAyYaJn5T2TpiQUgEALDOCdpkmV1pjQ2bbP8LQM7MUST_HJTwD1NYuBiEyQUqB8Pac9H33v6x6bZUmiocUewvO4n8kNLCZGq5jkbLm2WJUePssvJoSnx5OBzAsc16ctgQSxJbdd5arBQkzulVclTlb-qxCZxVdCM7shJwpQQnI-aplzNGmCwf5TI0FWAG-QIRUcckcb_opSeAZia2h6A0-VED1VgBfENORcDvKDieVbj-geuWaN4QscQkQ_D0LbBAzneqCuNrfq17xhTDX_8YJgK442UE-Ssg7aLHwjKSM7yQrAsTPuhKpuAYZPROhYAZUheA5y58I8mjbaQRAOtzdrZaDvNg5eUYOqanZxbMr9wjuZ1zDqFq_-fXWUm6Hm61KwCmXt_zo-4CIkYZtwaJWFNgWz5U2-6N7A06sJAfGuYTvvl4_Qc1cvxNgR16fmByA5ciufNkeLVBrZqm_HQXInaU_w\",\"encrypted_click_tracking\":\"AZWgPTb6mRezRKW8r8woQ0ntO35o6LMq5P-efujsc7XNMG9SEo_BLOxf59mEQAMzEbzkeLvKt4Nve2kh4AFGHMvchAVERXevxDJh_KXet_R42h0KaEeuuXY-nIwppyGL7aTGCabiSlkAAzNZKjgksHkITjzySWW9xamNJmEjsVPXLa_O6fmdYoNelYMPNyHfB-oDJH5YA-svce-4RRam7as1\",\"click_tracking_linkshim_cb\":\"AT003mxZF3hiYUxQx14GSwmDlRcxX2n-VSEg7Z-w16YM8OSM_9Y4R98w5PCrYLeO7dU5mEQ2KHYXb3zY18AH1HDlbHOsWDi2cEiACXf17rLdYRHkWnH5Oq0XGFQz5D_QCaQyESIIOTNDq87A__jJmsWEoih7arscZBXzp1aKogCjVEiTyLnQdQyAAO5EMMxz5aLjHF8Fmo3iQ6AfzCF27zkzy-vkSzj8ELFWvQ\",\"short_form_video_context\":{\"playback_video\":{\"height\":1920,\"width\":1080,\"length_in_second\":25.233,\"id\":\"1198841548788686\",\"animated_image_caption\":null,\"broadcaster_origin\":null,\"broadcast_id\":null,\"broadcast_status\":null,\"is_live_streaming\":false,\"is_live_trace_enabled\":false,\"is_looping\":true,\"is_video_broadcast\":false,\"is_podcast_video\":false,\"loop_count\":3,\"is_spherical\":false,\"is_spherical_enabled\":true,\"unsupported_browser_message\":null,\"pmv_metadata\":null,\"latency_sensitive_config\":null,\"live_playback_instrumentation_configs\":null,\"is_ncsr\":false,\"permalink_url\":\"https://www.facebook.com/reel/1198841548788686/\",\"captions_url\":null,\"dash_prefetch_experimental\":[\"1324761826114495v\",\"1969608070272109a\"],\"video_available_captions_locales\":[],\"video_status_type\":\"OK\",\"can_use_oz\":true,\"playlist\":\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\\n<MPD xmlns=\\\"urn:mpeg:dash:schema:mpd:2011\\\" xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xsi:schemaLocation=\\\"urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd\\\" profiles=\\\"urn:mpeg:dash:profile:isoff-on-demand:2011\\\" minBufferTime=\\\"PT2S\\\" type=\\\"static\\\" mediaPresentationDuration=\\\"PT25.23864S\\\" FBTagsetUsed=\\\"gen2hwbasicvp9\\\" FBManifestIdentifier=\\\"FgAYDmdlbjJod2Jhc2ljdnA5GVaMhPbBupvcAvyygpGLmYED/u714KS32gSYlLC70bvxBNrRgNaj1v8GIhgQYXVkaW9fYWFjX2xuX3ZiciI2ABQAAA==\\\"><Period id=\\\"0\\\" duration=\\\"PT25.23864S\\\"><AdaptationSet id=\\\"0\\\" contentType=\\\"video\\\" frameRate=\\\"15360/512\\\" subsegmentAlignment=\\\"true\\\" par=\\\"9:16\\\" FBUnifiedUploadResolutionMos=\\\"360:80.5,480:80.5,720:80.5,1080:80.5\\\"><Representation id=\\\"847054944357566v\\\" bandwidth=\\\"2935343\\\" codecs=\\\"vp09.00.40.08.00.01.01.01.00\\\" mimeType=\\\"video/mp4\\\" sar=\\\"1:1\\\" FBEncodingTag=\\\"dash_vp9-basic-gen2_1080p\\\" FBPlaybackResolutionMos=\\\"0:100,360:93.1,480:91.4,720:87.4,1080:81.8\\\" FBPlaybackResolutionMosConfidenceLevel=\\\"high\\\" FBPlaybackResolutionCsvqm=\\\"0:100,360:97.4,480:96.9,720:95.7,1080:93.8\\\" width=\\\"1080\\\" height=\\\"1920\\\" FBQualityClass=\\\"hd\\\" FBQualityLabel=\\\"1080p\\\"><BaseURL>https://video-ord5-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPmH9eXcUYGWA1EyMPbI7lW40dd7x--epsGz1KzJOGiVllqDz6qWnrvoL_13uCRwhdZ4-YBFUDYAM-QeNN80iw6HZSQguy_2r_AiVfrREogvg.mp4?_nc_cat=107&amp;_nc_sid=9ca052&amp;_nc_ht=video-ord5-3.xx.fbcdn.net&amp;_nc_ohc=mrs6OW39r_gQ7kNvwFl0LsK&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6MTE5ODg0MTU0ODc4ODY4Niwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTI2MjA1ODkyNTY4Mzc2MSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyNSwiYml0cmF0ZSI6MjQzNzA1NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&amp;ccb=17-1&amp;_nc_gid=DC46cvvTKWG54rxVPk1rEA&amp;_nc_zt=28&amp;oh=00_AfhVIGzz7kEFQlBj8lDdY3DY8GxdAjdpFhUEDF3kUQjGDQ&amp;oe=6924AB95</BaseURL><SegmentBase indexRange=\\\"818-921\\\" timescale=\\\"15360\\\" FBFirstSegmentRange=\\\"922-1279722\\\"><Initialization range=\\\"0-817\\\"/></SegmentBase></Representation><Representation id=\\\"1324761826114495v\\\" bandwidth=\\\"384164\\\" codecs=\\\"vp09.00.21.08.00.01.01.01.00\\\" mimeType=\\\"video/mp4\\\" sar=\\\"1:1\\\" FBEncodingTag=\\\"dash_vp9-basic-gen2_360p\\\" FBPlaybackResolutionMos=\\\"0:100,360:74.5,480:68.7,720:57.4,1080:44.4\\\" FBPlaybackResolutionMosConfidenceLevel=\\\"high\\\" FBPlaybackResolutionCsvqm=\\\"0:100,360:89,480:83.5,720:72.7,1080:59.2\\\" width=\\\"360\\\" height=\\\"640\\\" FBQualityClass=\\\"sd\\\" FBQualityLabel=\\\"360p\\\"><BaseURL>https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPo_AIrttTstOVgCEPOD-mo_V6CoBKwrDB34BsgTJB2ojYTeoLkn4l1-1Z0TDdFq-vFNzpSw3TVlXiYP7Le_QzASqgYfmYCFLSzKeoG_HFtUg.mp4?_nc_cat=101&amp;_nc_sid=9ca052&amp;_nc_ht=video-ord5-1.xx.fbcdn.net&amp;_nc_ohc=kNwO3Vug2LsQ7kNvwGmECn5&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxMTk4ODQxNTQ4Nzg4Njg2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjYyMDU4OTI1NjgzNzYxLCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI1LCJiaXRyYXRlIjozMDE0NTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&amp;ccb=17-1&amp;_nc_gid=DC46cvvTKWG54rxVPk1rEA&amp;_nc_zt=28&amp;oh=00_AfiVJw6-LrTqb6kTEiUkl0VcACn0vtFvusniqTZjMCgfLA&amp;oe=6924AB13</BaseURL><SegmentBase indexRange=\\\"818-921\\\" timescale=\\\"15360\\\" FBFirstSegmentRange=\\\"922-155870\\\"><Initialization range=\\\"0-817\\\"/></SegmentBase></Representation><Representation id=\\\"765731803152646v\\\" bandwidth=\\\"1040684\\\" codecs=\\\"vp09.00.30.08.00.01.01.01.00\\\" mimeType=\\\"video/mp4\\\" sar=\\\"1:1\\\" FBEncodingTag=\\\"dash_vp9-basic-gen2_540p\\\" FBPlaybackResolutionMos=\\\"0:100,360:84.2,480:80,720:73.3,1080:64\\\" FBPlaybackResolutionMosConfidenceLevel=\\\"high\\\" FBPlaybackResolutionCsvqm=\\\"0:100,360:94.7,480:93.1,720:87.9,1080:79.2\\\" width=\\\"540\\\" height=\\\"960\\\" FBQualityClass=\\\"sd\\\" FBQualityLabel=\\\"540p\\\"><BaseURL>https://video-ord5-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPpivsD66fjsr4Jo1eNYsTEC9n9IcxmtzF-xjDxI6FwlZJ3GfQhPoedb-aPu7u5S1JtZZl-Rr2P2xhXYb3wVunan6q6-UKUMx-cvjjISorCPQ.mp4?_nc_cat=106&amp;_nc_sid=9ca052&amp;_nc_ht=video-ord5-3.xx.fbcdn.net&amp;_nc_ohc=eCtyvR3hqLwQ7kNvwE-C5Dg&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNTQwcCIsInZpZGVvX2lkIjoxMTk4ODQxNTQ4Nzg4Njg2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjYyMDU4OTI1NjgzNzYxLCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI1LCJiaXRyYXRlIjo4Mjc5NjQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&amp;ccb=17-1&amp;_nc_gid=DC46cvvTKWG54rxVPk1rEA&amp;_nc_zt=28&amp;oh=00_AfhKj7tBuWr1RbbdVurZBDdB1lXvsRTtY5tVIyu2lGq-6g&amp;oe=692485BE</BaseURL><SegmentBase indexRange=\\\"818-921\\\" timescale=\\\"15360\\\" FBFirstSegmentRange=\\\"922-438087\\\"><Initialization range=\\\"0-817\\\"/></SegmentBase></Representation><Representation id=\\\"1375414080898316v\\\" bandwidth=\\\"1954832\\\" codecs=\\\"vp09.00.31.08.00.01.01.01.00\\\" mimeType=\\\"video/mp4\\\" sar=\\\"1:1\\\" FBEncodingTag=\\\"dash_vp9-basic-gen2_720p\\\" FBPlaybackResolutionMos=\\\"0:100,360:91.3,480:87.7,720:82.6,1080:73.9\\\" FBPlaybackResolutionMosConfidenceLevel=\\\"high\\\" FBPlaybackResolutionCsvqm=\\\"0:100,360:96.8,480:95.8,720:94.1,1080:88.4\\\" width=\\\"720\\\" height=\\\"1280\\\" FBQualityClass=\\\"hd\\\" FBQualityLabel=\\\"720p\\\"><BaseURL>https://video-ord5-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOAkXGrzh8P_UspiO4EXVL_sBGJkKbftCiS-XQus_3JGvbqD9vvnZQU35KVCb98l8f3UBTFkKNAzPVfd5mEvZf0cT68xPBwWnTdHXrdHFh2pQ.mp4?_nc_cat=109&amp;_nc_sid=9ca052&amp;_nc_ht=video-ord5-3.xx.fbcdn.net&amp;_nc_ohc=pLb_kZU9hjwQ7kNvwHNiNYb&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxMTk4ODQxNTQ4Nzg4Njg2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjYyMDU4OTI1NjgzNzYxLCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI1LCJiaXRyYXRlIjoxNTY1MDI1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&amp;ccb=17-1&amp;_nc_gid=DC46cvvTKWG54rxVPk1rEA&amp;_nc_zt=28&amp;oh=00_Afi3JRAHSe4qMj5kdn3RgE3jhBkQXbhyf8JjLONzTfff6Q&amp;oe=69248E73</BaseURL><SegmentBase indexRange=\\\"818-921\\\" timescale=\\\"15360\\\" FBFirstSegmentRange=\\\"922-860403\\\"><Initialization range=\\\"0-817\\\"/></SegmentBase></Representation></AdaptationSet><AdaptationSet id=\\\"1\\\" contentType=\\\"audio\\\" subsegmentStartsWithSAP=\\\"1\\\" subsegmentAlignment=\\\"true\\\"><Representation id=\\\"1969608070272109a\\\" bandwidth=\\\"66425\\\" codecs=\\\"mp4a.40.5\\\" mimeType=\\\"audio/mp4\\\" FBAvgBitrate=\\\"66425\\\" audioSamplingRate=\\\"44100\\\" FBEncodingTag=\\\"dash_ln_heaac_vbr3_audio\\\"><AudioChannelConfiguration schemeIdUri=\\\"urn:mpeg:dash:23003:3:audio_channel_configuration:2011\\\" value=\\\"2\\\"/><BaseURL>https://video-ord5-3.xx.fbcdn.net/o1/v/t2/f2/m412/AQM486GcuuJYs9m8oo5N2xBcJZvBmtaekhiZvacNV9sPgNfrfAWQD9jpMX8lEp1TE4Upde3-0X2BmdNCH_jHo4XhOUDXNZn3ur6jU8U.mp4?_nc_cat=106&amp;_nc_sid=9ca052&amp;_nc_ht=video-ord5-3.xx.fbcdn.net&amp;_nc_ohc=IUS0ZAX7xugQ7kNvwGIOVG-&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoxMTk4ODQxNTQ4Nzg4Njg2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMjYyMDU4OTI1NjgzNzYxLCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI1LCJiaXRyYXRlIjo2Njc0NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&amp;ccb=17-1&amp;_nc_gid=DC46cvvTKWG54rxVPk1rEA&amp;_nc_zt=28&amp;oh=00_AfgNe60TrlPaX-9HXlC1u25IxVQwP3v-3jApl0UYFSdiFw&amp;oe=69247DCB</BaseURL><SegmentBase indexRange=\\\"824-1011\\\" timescale=\\\"44100\\\" FBFirstSegmentRange=\\\"1012-17554\\\"><Initialization range=\\\"0-823\\\"/></SegmentBase></Representation></AdaptationSet></Period></MPD>\\n\",\"dash_manifest_url\":\"https://www.facebook.com/dash_mpd_debug.mpd?v=1198841548788686&dummy=.mpd\",\"min_quality_preference\":null,\"audio_user_preferred_language\":\"en\",\"browser_native_sd_url\":\"https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m412/AQMMVa_HAle42_9xTt9HZbxwkz4Y525TAI-YpSqRCmcg12tv8KrFoJzbxJTuMgwN8cCBHlVIRikxBsr4ewe2GuI2j_w24eLx_NCgYiuCMA.mp4?_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=Dyn0y9s227IQ7kNvwFe9tWT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI2MjA1ODkyNTY4Mzc2MSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyNSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=DC46cvvTKWG54rxVPk1rEA&_nc_zt=28&oh=00_AfhTlOYHRHjU-rhmDHVs-8tad0Vm7QCQCvXpv4G-LSm0oA&oe=6924A833&bitrate=332009&tag=sve_sd\",\"browser_native_hd_url\":\"https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMf0cq9VEEW4tfkkkeLVdz2IAaOcaOgTKc8BbR5yv_aG4od_xFDcPCBMF9aRywCkiBQ7VtxxoQYB4Dr5gzYnMfwle5fyVQn6dgOnetxrqcC-Q.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=video-ord5-1.xx.fbcdn.net&_nc_ohc=_S4Qwnju0x4Q7kNvwEPO6CP&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEyNjIwNTg5MjU2ODM3NjEsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=e4ecd6d801eb9ae9&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xODQyMDA0MTc1NjA3MjlDRjlGNDE1OTBGOTZGM0VBMF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0VGNEQ4RjIxRTNFQjQ0NEUzQkUxODRFMUNGREIwMEFDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbi0Jvfv_W9BBUCKAJDMywXQDk7peNT988YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=DC46cvvTKWG54rxVPk1rEA&_nc_zt=28&oh=00_AfjoFjwaCTONnxcXGcQlPA4nhKNZECeZLeZZiv5y0xYa_A&oe=692499C5&bitrate=1457596&tag=dash_h264-basic-gen2_720p\",\"spherical_video_fallback_urls\":null,\"comet_video_player_nextgendash_availability\":\"AVAILABLE\",\"is_gaming_video\":false,\"is_latency_menu_enabled\":false,\"fbls_tier\":null,\"is_latency_sensitive_broadcast\":false,\"comet_video_player_static_config\":\"{}\",\"comet_video_player_context_sensitive_config\":\"{}\",\"video_player_shaka_performance_logger_init\":{\"__typename\":\"VideoPlayerShakaPerformanceLoggerInit\",\"__module_operation_useVideoPlayerShakaPerformanceLoggerRelayImpl_video\":{\"__dr\":\"useVideoPlayerShakaPerformanceLoggerRelayImpl_init$normalization.graphql\"},\"__module_component_useVideoPlayerShakaPerformanceLoggerRelayImpl_video\":{\"__dr\":\"VideoPlayerShakaPerformanceLogger\"}},\"video_player_shaka_performance_logger_should_sample\":false,\"video_player_shaka_performance_logger_init2\":{\"__typename\":\"VideoPlayerShakaPerformanceLoggerInit\",\"__module_operation_useVideoPlayerShakaPerformanceLoggerBuilder_video\":{\"__dr\":\"useVideoPlayerShakaPerformanceLoggerBuilder_init$normalization.graphql\"},\"__module_component_useVideoPlayerShakaPerformanceLoggerBuilder_video\":{\"__dr\":\"VideoPlayerShakaPerformanceLoggerBuilder\"},\"per_session_sampling_rate\":null},\"autoplay_gating_result\":\"all_page_organic_allowed\",\"viewer_autoplay_setting\":\"default_autoplay\",\"can_autoplay\":true,\"drm_info\":\"{\\\"video_license_uri_map\\\":{},\\\"graph_api_video_license_uri\\\":null,\\\"fairplay_cert\\\":null,\\\"widevine_cert\\\":\\\"CsECCAMSEBcFuRfMEgSGiwYzOi93KowYgrSCkgUijgIwggEKAoIBAQCZ7Vs7Mn2rXiTvw7YqlbWYUgrVvMs3UD4GRbgU2Ha430BRBEGtjOOtsRu4jE5yWl5KngeVKR1YWEAjp+GvDjipEnk5MAhhC28VjIeMfiG\\\\/+\\\\/7qd+EBnh5XgeikX0YmPRTmDoBYqGB63OBPrIRXsTeo1nzN6zNwXZg6IftO7L1KEMpHSQykfqpdQ4IY3brxyt4zkvE9b\\\\/tkQv0x4b9AsMYE0cS6TJUgpL+X7r1gkpr87vVbuvVk4tDnbNfFXHOggrmWEguDWe3OJHBwgmgNb2fG2CxKxfMTRJCnTuw3r0svAQxZ6ChD4lgvC2ufXbD8Xm7fZPvTCLRxG88SUAGcn1oJAgMBAAE6FGxpY2Vuc2Uud2lkZXZpbmUuY29tEoADrjRzFLWoNSl\\\\/JxOI+3u4y1J30kmCPN3R2jC5MzlRHrPMveoEuUS5J8EhNG79verJ1BORfm7BdqEEOEYKUDvBlSubpOTOD8S\\\\/wgqYCKqvS\\\\/zRnB3PzfV0zKwo0bQQQWz53ogEMBy9szTK\\\\/NDUCXhCOmQuVGE98K\\\\/PlspKkknYVeQrOnA+8XZ\\\\/apvTbWv4K+drvwy6T95Z0qvMdv62Qke4XEMfvKUiZrYZ\\\\/DaXlUP8qcu9u\\\\/r6DhpV51Wjx7zmVflkb1gquc9wqgi5efhn9joLK3\\\\/bNixbxOzVVdhbyqnFk8ODyFfUnaq3fkC3hR3f0kmYgI41sljnXXjqwMoW9wRzBMINk+3k6P8cbxfmJD4\\\\/Paj8FwmHDsRfuoI6Jj8M76H3CTsZCZKDJjM3BQQ6Kb2m+bQ0LMjfVDyxoRgvfF\\\\/\\\\/M\\\\/EEkPrKWyU2C3YBXpxaBquO4C8A0ujVmGEEqsxN1HX9lu6c5OMm8huDxwWFd7OHMs3avGpr7RP7DUnTikXrh6X0\\\"}\",\"p2p_settings\":null,\"audio_settings\":null,\"captions_settings\":null,\"broadcast_low_latency_config\":null,\"audio_availability\":\"AVAILABLE\",\"muted_segments\":[],\"spherical_video_renderer\":null,\"preferred_thumbnail\":{\"image\":{\"uri\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t15.5256-10/584457399_1368892027952174_1322621666294310178_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=be8305&_nc_ohc=s8G-UuNDghsQ7kNvwHlwW-5&_nc_oc=AdmUePvTtwX3yUN-OakabQbcoYyjRvYG6V3GnWMOxfvpWnRN6FLeeiQPDLI6onhUiq0&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_Afiv11liWY3zZEi3_lHJM19gW1fN5r4EOfoXxrMQ4tEhag&oe=69249954\"},\"image_preview_payload\":\"ABgqVoPmLoSjZPI+tSx3cij96u4f3l68HHIp5HJx6/1NQI2FI78/zNKw7l9ZElGUIPt3H4UVSmRT8w4YAYI4PUelFS1YpaiynBPPf+pqsBlOD656+v8ASp5fvN6Z/qah8vcq7cj19Cc8cnjpTJW7Hsm3vn7n86Knjh8wBS4HIPqxxj6UUWKWm5fSCMHdtBJ5yealeISDa3I9CKkFOqiblZIUh6DH8/8AGipI+WP1ooEf/9k=\",\"id\":\"1368892021285508\"},\"video_imf_data\":null,\"warning_screen_renderer\":null,\"cix_screen\":null},\"video\":{\"__typename\":\"Video\",\"id\":\"1198841548788686\",\"playable_duration_in_ms\":25233,\"video_collaborator\":null,\"embeddable\":true,\"owner\":{\"__typename\":\"User\",\"id\":\"100078269920436\"},\"audio_availability\":\"AVAILABLE\"},\"video_owner\":{\"__typename\":\"User\",\"id\":\"100078269920436\",\"__isActor\":\"User\",\"name\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์\",\"enable_reels_tab_deeplink\":true,\"is_verified\":true,\"url\":\"https://www.facebook.com/people/%F0%9D%99%86%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%A3-%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%AE-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C/100078269920436/\",\"displayPicture\":{\"uri\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/490320993_666846942600964_8045784110897112251_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xYchiEeLk3sQ7kNvwGt1yaI&_nc_oc=Adm9eDDjUMIZqS7dPdMFM-jkaLnB-qcVbMayDQxSmwbQVFXR14N4eGPrTKS7L09h1Tk&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_AfjgJvmJBC_gZBgROZe8eTS9UNoJNMWgLSwnDhPl4n4m-A&oe=692489E8\"},\"subscribe_status\":\"CANNOT_SUBSCRIBE\",\"delegate_page\":{\"id\":\"100132709251463\",\"woodhenge_creator_info\":{\"viewer_entrypoint_eligibility\":{\"is_eligible\":true},\"id\":\"619468620651200:FubsCreatorInfo\",\"viewer_active_subscription_entitlement\":null}}},\"is_passive_content\":true,\"fb_shorts_reshare_context\":{\"is_reshare\":false,\"reshare_creator\":{\"__typename\":\"User\",\"__isActor\":\"User\",\"id\":\"100078269920436\",\"name\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์\",\"enable_reels_tab_deeplink\":true,\"is_verified\":true,\"url\":\"https://www.facebook.com/people/%F0%9D%99%86%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%A3-%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%AE-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C/100078269920436/\"}},\"remix_info\":{\"is_remixable\":true,\"status\":\"DISABLED\"},\"shareable_url\":\"https://www.facebook.com/reel/1198841548788686\",\"video_owner_type\":\"FACEBOOK_USER\",\"soundtrack_info\":{\"id\":\"4238480526394182\",\"type\":\"CUSTOM_AUDIO\"},\"track_title\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์ · Original audio\",\"music_album_art_uri\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/490320993_666846942600964_8045784110897112251_n.jpg?stp=cp0_dst-jpg_s64x64_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xYchiEeLk3sQ7kNvwGt1yaI&_nc_oc=Adm9eDDjUMIZqS7dPdMFM-jkaLnB-qcVbMayDQxSmwbQVFXR14N4eGPrTKS7L09h1Tk&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_AfiVn-GICE6U6UGNI6xZbCwydr3z80DXs5Uc-srGcOfMyQ&oe=692489E8\",\"is_original_audio_on_facebook\":true,\"first_frame_thumbnail\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t15.5256-10/584992963_811619595195793_7786597144850866163_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Bb8aRPpnPI0Q7kNvwF0VCd1&_nc_oc=Adm1rGuIPKLP3YQjOz4CTsDLvKMK90ACe0VxEQSh0GZVINDc0hpqPTv-_BS6BhkjE_w&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_AfgM6-ssOFjJYTB3urUqb73mYEN9W5OKF9easU9QGXbQIg&oe=6924A0BF\"},\"tracking\":\"{\\\"qid\\\":\\\"-7931937351939629657\\\",\\\"mf_story_key\\\":\\\"1166628758942628\\\",\\\"top_level_post_id\\\":\\\"1198841548788686\\\",\\\"content_owner_id_new\\\":\\\"100078269920436\\\",\\\"original_content_id\\\":\\\"833110445974612\\\",\\\"page_id\\\":\\\"100132709251463\\\",\\\"story_location\\\":153,\\\"story_attachment_style\\\":\\\"video_autoplay\\\",\\\"video_id\\\":\\\"1198841548788686\\\",\\\"ent_attachement_type\\\":\\\"VideoAttachment\\\",\\\"app_id\\\":\\\"6628568379\\\",\\\"page_insights\\\":{\\\"100078269920436\\\":{\\\"page_id\\\":\\\"100078269920436\\\",\\\"page_id_type\\\":\\\"page\\\",\\\"actor_id\\\":\\\"100078269920436\\\",\\\"dm\\\":{\\\"isShare\\\":0,\\\"originalPostOwnerID\\\":0,\\\"sharedMediaID\\\":0,\\\"sharedMediaOwnerID\\\":0},\\\"psn\\\":\\\"EntVideoCreationStory\\\",\\\"post_context\\\":{\\\"object_fbtype\\\":1,\\\"publish_time\\\":1763557949,\\\"story_name\\\":\\\"EntVideoCreationStory\\\",\\\"story_fbid\\\":[\\\"1198841548788686\\\"]},\\\"role\\\":1,\\\"sl\\\":153,\\\"targets\\\":[{\\\"actor_id\\\":\\\"100078269920436\\\",\\\"page_id\\\":\\\"100078269920436\\\",\\\"post_id\\\":\\\"1198841548788686\\\",\\\"role\\\":1,\\\"share_id\\\":0}]}},\\\"actrs\\\":\\\"100078269920436\\\",\\\"tds_flgs\\\":3}\",\"privacy_scope\":{\"description\":\"Public\",\"label\":\"Custom\",\"display_label\":null,\"icon_image\":{\"height\":11,\"scale\":1,\"uri\":\"https://static.xx.fbcdn.net/rsrc.php/v4/yY/r/3iTcWByShpb.png\",\"width\":10},\"privacy_scope_renderer\":null},\"post_id\":\"833110445974612\",\"sponsored_data\":null,\"creation_time\":1763557983,\"feedback\":{\"associated_group\":null,\"id\":\"ZmVlZGJhY2s6ODMzMTEwNDQ1OTc0NjEy\"},\"branded_content_post_info\":null,\"can_viewer_delete\":false,\"can_viewer_cancel_collaboration_invite\":false,\"can_viewer_remove_collaborator\":false,\"can_viewer_see_collaboration_invite\":false,\"legal_reporting_cta_type\":null,\"legal_reporting_uri\":null,\"id\":\"UzpfSTEwMDA3ODI2OTkyMDQzNjpWSzoxMTk4ODQxNTQ4Nzg4Njg2\",\"save_info\":{\"viewer_save_state\":\"NOT_SAVED\"},\"to\":null,\"video\":{\"id\":\"1198841548788686\",\"owner\":{\"__typename\":\"User\",\"id\":\"100078269920436\"}},\"post_collaboration\":null,\"can_viewer_remove_self_as_collaborator\":false,\"if_viewer_can_see_stars_toggle_menu_option\":null,\"serialized_frtp_identifiers\":null,\"debug_info\":null,\"message\":{\"text\":\"สติกเกอร์สุญญากาศติดกระจก 🎄🎅🏻\",\"ranges\":[]},\"translated_message_for_viewer\":null,\"contextualElementShortFormContext\":{\"video_label\":null},\"attachments\":[{\"call_to_action_renderer\":null,\"media\":{\"__typename\":\"Video\",\"accent_color\":\"FFAE2F28\",\"__isNode\":\"Video\",\"id\":\"1198841548788686\"}}]},\"enable_horizontal_ufi\":false,\"enable_comet_reels_unification_for_ifr\":false},{\"__typename\":\"FeedStandardAttachmentStyleInfo\"},{\"__typename\":\"FutureOfFeedAttachmentStyleInfo\"}]}],\"likesCount\":3,\"sharesCount\":0,\"commentsCount\":3,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/220582823547231/permalink/1166628758942628/?comment_id=1166981415574029\",\"id\":\"Y29tbWVudDoxMTY2NjI4NzU4OTQyNjI4XzExNjY5ODE0MTU1NzQwMjk=\",\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjYyODc1ODk0MjYyOF8xMTY2OTgxNDE1NTc0MDI5\",\"date\":\"2025-11-20T01:06:26.000Z\",\"text\":\"น่ารักจัาสงยงามค่ะ\",\"profileUrl\":\"https://www.facebook.com/pani.s.ra.t.ng.chim.2024\",\"profilePicture\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/565345916_2488835891494036_277257791409183676_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Rgf_7kN4FgAQ7kNvwEkC8-5&_nc_oc=AdlNrNl2hvll7n-rVwYmP_UwmnfHkhmJWutKH2pKEwODzQHBv34-QWtMYwfmf84LASA&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=DC46cvvTKWG54rxVPk1rEA&oh=00_Afg3OJx40c1wW1QYAD40yiOzi2jJlaqwp6w9Mrbi0a79gg&oe=6924A7FC\",\"profileId\":\"100011029482806\",\"profileName\":\"ปาณิสรา แตงฉิม\",\"likesCount\":\"0\",\"threadingDepth\":0}],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ใต้ต้นคริสต์มาสมีน้ำตาซ่อนอยู่ถึงเวลาเอาลูกๆออกมาใช้5555",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1166564618949042/\",\"time\":\"2025-11-19T11:29:26.000Z\",\"user\":{\"id\":\"100001787222882\",\"name\":\"Karn Ruanpan\"},\"text\":\"\",\"textReferences\":[{\"url\":\"https://www.facebook.com/hashtag/%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B8%A1%E0%B8%B2%E0%B8%AA?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B8%A1%E0%B8%B2%E0%B8%AA\",\"id\":\"249019901904583\"},{\"url\":\"https://www.facebook.com/hashtag/%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8\",\"id\":\"725183810887549\"},{\"url\":\"https://www.facebook.com/hashtag/christmas?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/christmas\",\"id\":\"348678475237994\"}],\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjU2NDYxODk0OTA0Mg==\",\"sharedPost\":{\"pageName\":{\"id\":\"100078269920436\",\"name\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์\",\"profileUrl\":\"https://www.facebook.com/people/%F0%9D%99%86%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%A3-%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%AE-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C/100078269920436/\",\"profilePic\":\"https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-1/490320993_666846942600964_8045784110897112251_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xYchiEeLk3sQ7kNvwEgiqs6&_nc_oc=Adlk-tzGvJu4mxRf2ZWq0eHBCyr220UCy2ftJtzGvW94QXX_zNVAv_Uv2yRA-BH4x6w&_nc_zt=24&_nc_ht=scontent-atl3-3.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_AfgYDZODmg-oTe_KGTdAS1c7Cm-R8GzU8xq4s9UYmiVSPw&oe=692489E8\"},\"url\":\"https://www.facebook.com/permalink.php?story_fbid=pfbid02GpNrjPE3HUvqB8D7523SgdBaPkLbZ2MbLJUAE7EWyrcJp82ECVgJxzrd4jgKGkaml&id=100078269920436\",\"time\":\"2025-11-19T11:21:57.000Z\",\"timestamp\":1763551317,\"user\":{\"id\":\"100078269920436\",\"name\":\"𝙆𝙖𝙧𝙣 𝙎𝙩𝙤𝙧𝙮 ; บ้านของกาญจน์\",\"profileUrl\":\"https://www.facebook.com/people/%F0%9D%99%86%F0%9D%99%96%F0%9D%99%A7%F0%9D%99%A3-%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%AE-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C/100078269920436/\",\"profilePic\":\"https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-1/490320993_666846942600964_8045784110897112251_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xYchiEeLk3sQ7kNvwEgiqs6&_nc_oc=Adlk-tzGvJu4mxRf2ZWq0eHBCyr220UCy2ftJtzGvW94QXX_zNVAv_Uv2yRA-BH4x6w&_nc_zt=24&_nc_ht=scontent-atl3-3.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_AfgYDZODmg-oTe_KGTdAS1c7Cm-R8GzU8xq4s9UYmiVSPw&oe=692489E8\"},\"text\":\"🎄 คริสต์มาสปีนี้ แผ่นปูพื้นซีดซะแล้ว 😆 ไม่มีงบเปลี่ยนแล้วค่ะ เหนื่อย ไว้รอต้นปีแพลนปูกระเบื้องลายไม้เหมือนชั้นบนแทนค่ะ  สีแบบเดียวกัน \\n\\n🎅🏻 วันนี้ติดซานต้าได้ 2 จุดแล้วค่ะ กับประตูหน้าบ้าน หน้าบ้านต้องทำความสะอาด 1 ปีผ่านไปไวมาก \\n\\n#คริสต์มาส #สติกเกอร์สุญญากาศ #Christmas\",\"textReferences\":[{\"url\":\"https://www.facebook.com/hashtag/%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B8%A1%E0%B8%B2%E0%B8%AA?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B8%A1%E0%B8%B2%E0%B8%AA\",\"id\":\"249019901904583\"},{\"url\":\"https://www.facebook.com/hashtag/%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8\",\"id\":\"725183810887549\"},{\"url\":\"https://www.facebook.com/hashtag/christmas?__eep__=6\",\"mobileUrl\":\"https://m.facebook.com/hashtag/christmas\",\"id\":\"348678475237994\"}],\"media\":[{\"thumbnail\":\"https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/585404519_833042799314710_6331230478273732447_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZyrLk2iHHc0Q7kNvwG_lup1&_nc_oc=Admnfr_N-FQz6StcfvmDvd7m4TKwBC3F9JTP7c0Jn_8gDxz4g7a3W7PO2hl93Az0JWM&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_AfixYZy8czI3zFssH1YAXCcTaSBP_4thLPFxoRMCDojlbA&oe=69248487\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/585404519_833042799314710_6331230478273732447_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZyrLk2iHHc0Q7kNvwG_lup1&_nc_oc=Admnfr_N-FQz6StcfvmDvd7m4TKwBC3F9JTP7c0Jn_8gDxz4g7a3W7PO2hl93Az0JWM&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_AfixYZy8czI3zFssH1YAXCcTaSBP_4thLPFxoRMCDojlbA&oe=69248487\",\"height\":701,\"width\":526},\"__isMedia\":\"Photo\",\"accent_color\":\"FF282A1B\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=833042792648044&set=a.165651169387213&type=3\",\"id\":\"833042792648044\",\"ocrText\":\"May be an image of sink and indoors\"}]},\"reactionLoveCount\":1,\"id\":\"UzpfSTEwMDAwMTc4NzIyMjg4MjpWSzoxMTY2NTY0NjE4OTQ5MDQy\",\"legacyId\":\"1166564618949042\",\"likesCount\":1,\"sharesCount\":0,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "FLOOR",
+          "LIVING_ROOM"
+        ],
+        "painPoints": [
+          "DIRT"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "FLOOR_TILE"
+        ]
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1166462425625928/\",\"time\":\"2025-11-19T09:07:12.000Z\",\"user\":{\"id\":\"100004117209226\",\"name\":\"ต่าย อรุณี\"},\"text\":\"\",\"topReactionsCount\":3,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQ2MjQyNTYyNTkyOA==\",\"reactionLikeCount\":133,\"reactionHahaCount\":70,\"reactionLoveCount\":2,\"id\":\"UzpfSTEwMDAwNDExNzIwOTIyNjpWSzoxMTY2NDYyNDI1NjI1OTI4\",\"legacyId\":\"1166462425625928\",\"attachments\":[{\"thumbnail\":\"https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/586044467_3615398908607314_2606053085361028744_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=3PHaXI8eYUYQ7kNvwFEwWZi&_nc_oc=AdnpVEQyo9jeQ_jYb6C4Dp6MpfdD1Cski3AvZ2SdTHzBbM8DxJWnVJguR8E_0wNwIWA&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_Afgs8sygZuQVaeG1dHQrQZzrIWXVbvlAfaV7HqNFoANpdg&oe=6924B012\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/586044467_3615398908607314_2606053085361028744_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=3PHaXI8eYUYQ7kNvwFEwWZi&_nc_oc=AdnpVEQyo9jeQ_jYb6C4Dp6MpfdD1Cski3AvZ2SdTHzBbM8DxJWnVJguR8E_0wNwIWA&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_Afgs8sygZuQVaeG1dHQrQZzrIWXVbvlAfaV7HqNFoANpdg&oe=6924B012\",\"height\":830,\"width\":526},\"__isMedia\":\"Photo\",\"accent_color\":\"FFC1BAA8\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=3615398905273981&set=gm.1166462425625928&type=3\",\"id\":\"3615398905273981\",\"ocrText\":\"No photo description available.\"}],\"likesCount\":205,\"sharesCount\":11,\"commentsCount\":30,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/220582823547231/permalink/1166462425625928/?comment_id=1166553495616821\",\"id\":\"Y29tbWVudDoxMTY2NDYyNDI1NjI1OTI4XzExNjY1NTM0OTU2MTY4MjE=\",\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQ2MjQyNTYyNTkyOF8xMTY2NTUzNDk1NjE2ODIx\",\"date\":\"2025-11-19T11:09:05.000Z\",\"text\":\"มันคืองานศิลปะ\",\"profileUrl\":\"https://www.facebook.com/oors.noneed\",\"profilePicture\":\"https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/557749308_24386368527711721_6613526168005199127_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=uP7Kf8jRM6MQ7kNvwHQR7MQ&_nc_oc=AdkaPLaK8arfEB-p1MBDoOsCSLH-HMdmsy14pEaoY3Zeck3x77RSsxNSgIQfcaHhqIM&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_AfjEHjIZeM2ue6LzCSvfyWzMmNNWYX0AWXZ4Mw0xNib8ig&oe=692485DA\",\"profileId\":\"pfbid024nxk99VGiQWooq3S49Uo3wuThG3UqsvQrKgw4x7xhCDPcPfw1JzPGZi15xEB9X5ul\",\"profileName\":\"Chantharat Phuangsuwan\",\"likesCount\":\"4\",\"threadingDepth\":0},{\"commentUrl\":\"https://www.facebook.com/groups/220582823547231/permalink/1166462425625928/?comment_id=1166497192289118\",\"id\":\"Y29tbWVudDoxMTY2NDYyNDI1NjI1OTI4XzExNjY0OTcxOTIyODkxMTg=\",\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQ2MjQyNTYyNTkyOF8xMTY2NDk3MTkyMjg5MTE4\",\"date\":\"2025-11-19T09:40:29.000Z\",\"text\":\"บอกแม่ดีกว่า😂\",\"profileUrl\":\"https://www.facebook.com/whale.song.98\",\"profilePicture\":\"https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/554350461_3098660596978866_3572133303956507428_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=yKeXyw8bp0wQ7kNvwF06tTx&_nc_oc=AdnSwUl6S4cI0O3LJWblcYdPj45XWRMKV78Gkyh88vkknKUR6rybG_nhIeVSozW8ELk&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=seK8SUccHddyAGtd5gCfsA&oh=00_Afj4ixhZ2irZFGDaqNB-473YX58QoswDjbURSsgMzP9fdw&oe=6924AF3E\",\"profileId\":\"100005048676790\",\"profileName\":\"Whale Song\",\"likesCount\":\"4\",\"threadingDepth\":0}],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/220582823547231\",\"url\":\"https://www.facebook.com/groups/220582823547231/permalink/1166459655626205/\",\"time\":\"2025-11-19T09:01:44.000Z\",\"user\":{\"id\":\"100084005041851\",\"name\":\"Minimalism อะไรๆก็มินิมอล\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTE2NjQ1OTY1NTYyNjIwNQ==\",\"reactionLikeCount\":11,\"id\":\"UzpfSTEwMDA4NDAwNTA0MTg1MTpWSzoxMTY2NDU5NjU1NjI2MjA1\",\"legacyId\":\"1166459655626205\",\"attachments\":[{\"thumbnail\":\"https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/586463966_832731292870365_7669542456366911204_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wbIEaVqc2XcQ7kNvwGXvgab&_nc_oc=AdkGpvWkpZCrbTJeRaJzQdvmJvCmOzrhokDuRG76HJwt-JTmvSPdcDtDmvnyBnps6V8&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=kYcX9fJAdvPmAzzBhpyNHw&oh=00_AfhmeRa7ZGJ8A1q5P3tD_LbvLLAo2_I2ZhYSCQbMk2H98A&oe=6924A5A7\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/586463966_832731292870365_7669542456366911204_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wbIEaVqc2XcQ7kNvwGXvgab&_nc_oc=AdkGpvWkpZCrbTJeRaJzQdvmJvCmOzrhokDuRG76HJwt-JTmvSPdcDtDmvnyBnps6V8&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=kYcX9fJAdvPmAzzBhpyNHw&oh=00_AfhmeRa7ZGJ8A1q5P3tD_LbvLLAo2_I2ZhYSCQbMk2H98A&oe=6924A5A7\",\"height\":526,\"width\":526},\"__isMedia\":\"Photo\",\"accent_color\":\"FFF3F5F4\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=832731282870366&set=gm.1166459655626205&type=3\",\"id\":\"832731282870366\",\"ocrText\":\"No photo description available.\"}],\"likesCount\":11,\"sharesCount\":2,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"220582823547231\",\"groupTitle\":\"แต่งห้องกันเถอะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"101556259695472\"},\"inputUrl\":\"https://www.facebook.com/groups/220582823547231\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    }
+  ]
+}

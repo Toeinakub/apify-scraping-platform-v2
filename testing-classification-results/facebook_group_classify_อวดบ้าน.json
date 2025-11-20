@@ -1,0 +1,484 @@
+{
+  "summary": {
+    "topIntents": [
+      {
+        "count": 10,
+        "intent": "ASK_ADVICE"
+      },
+      {
+        "count": 7,
+        "intent": "SHOW_OFF"
+      },
+      {
+        "count": 1,
+        "intent": "COMPLAIN"
+      },
+      {
+        "count": 1,
+        "intent": "PROMOTE_SERVICE"
+      }
+    ],
+    "topPersonas": [
+      {
+        "count": 13,
+        "persona": "HOMEOWNER"
+      },
+      {
+        "count": 4,
+        "persona": "FUTURE_OWNER"
+      }
+    ],
+    "topHouseZones": [
+      {
+        "zone": "BEDROOM",
+        "count": 4
+      },
+      {
+        "zone": "LIVING_ROOM",
+        "count": 3
+      },
+      {
+        "zone": "GENERAL",
+        "count": 3
+      },
+      {
+        "zone": "ROOF",
+        "count": 2
+      },
+      {
+        "zone": "BATHROOM",
+        "count": 2
+      },
+      {
+        "zone": "KITCHEN",
+        "count": 1
+      },
+      {
+        "zone": "BALCONY",
+        "count": 1
+      }
+    ],
+    "topPainPoints": [],
+    "topJourneyStages": [
+      {
+        "count": 4,
+        "stage": "POST_CONSTRUCTION_ISSUE"
+      },
+      {
+        "count": 4,
+        "stage": "DESIGNING"
+      },
+      {
+        "count": 2,
+        "stage": "SELECTING_MATERIAL"
+      },
+      {
+        "count": 2,
+        "stage": "PLANNING"
+      },
+      {
+        "count": 1,
+        "stage": "DURING_CONSTRUCTION"
+      }
+    ],
+    "topMaterialCategories": [
+      {
+        "count": 4,
+        "category": "OTHER"
+      },
+      {
+        "count": 1,
+        "category": "FLOOR_TILE"
+      },
+      {
+        "count": 1,
+        "category": "WINDOW_DOOR"
+      },
+      {
+        "count": 1,
+        "category": "SPC_FLOOR"
+      }
+    ]
+  },
+  "totalItems": 20,
+  "classifiedItems": [
+    {
+      "originalText": "อวดบ้านกันนะ x ชุมชนท่องเที่ยว OTOP นวัตวิถี \n\n“ใครกำลังมองหามุมสงบ ๆ วิวสวย ๆ ต้องมาตะครองงาม จ.นครราชสีมาสักครั้ง รับรองหลงรักแน่นอน 💚✨”\n\n#อวดบ้านกันนะ #กรมการพัตนาชุมชน  #ชุมชนท่องเที่ยวOtopนวัตวิถี #OTOP",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "บ้านที่มีชีวิต",
+      "classification": {
+        "intents": [],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": null,
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "เพิ่มแผงโซล่ากับทีม Electron Move ประทับใจกับความมืออาชีพและมารยาทของทีมงาน ❤️",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "รบกวนขอความเห็นพี่ๆค่ะ แจ้งเคลมผ่านแล้วนะคะ เครื่องมีปัญหาจริง ตอนนี้ลังเลว่าจะเปลี่ยนเครื่องหรือคืนเงินเพื่อซื้อแบรนด์อื่นดีคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ใครพอจะแชร์นาฬิกาที่ใช้ดูเวลาในห้องนอนได้บ้างครับ ว่าใช้แบบไหนกันอยู่ ที่แสงไม่แยงตาเวลานอน และเงียบสนิท",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ทำฝ้าแบบซ่อนรางม่าน\nหรือใช้ม่านตาไก่\nแบบไหนสวยกว่ากันคะ ห้องรับแขก🙏🏻",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "LIVING_ROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "อยากดูบ้านหลังคาสีน้ำตาลคะ ขอไอเดียร์หน่อยคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "FUTURE_OWNER"
+        ],
+        "houseZones": [
+          "ROOF"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ขอดูลายกระเบื้องน้ำห้องบ้านพี่ๆหน่อยค่ะ\nสิ่งไหนควรทำ✅\nสิ่งไหนไม่ควรทำ❌\nขอคำแนะนำด้วยค่ะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BATHROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "FLOOR_TILE"
+        ]
+      }
+    },
+    {
+      "originalText": "อยากดูโต๊ะทานข้าวของแต่ละบ้านค่ะ\nถ้าแปะพิกัดด้วย\nจะดีมากเลยยยยค่า\n🥹🩵",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "FUTURE_OWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "บ้านที่ซื้อในโครงการ\nซื้อที่ดินแล้วกู้สร้างเอง\nอันไหนดี",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "FUTURE_OWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [
+          "PLANNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "รบกวนสอบถามหน่อยค่ะ ตรงพื้นที่วงแดงไว้ตอนแรกว่าจะต่อเป็นห้องนอนเลย หรือควรเว้นช่องไว้แบบรูปแรกคะ  เพราะห้องโถงอยู่ส่วนกลางของบ้านเลยค่ะ  ลังเลมากว่าควรทำแบบไหนดี 😂",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM",
+          "LIVING_ROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "เป็นคนชอบบ้านปูน และมีความคิดอยากได้บ้านปูนมาตลอด แต่สิ่งที่ได้ คือ ตามใจผู้ปลูกไมาได้ ตามใจผู้อยู่😫",
+      "classification": {
+        "intents": [
+          "COMPLAIN"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "PLANNING"
+        ],
+        "primaryIntent": "COMPLAIN",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/170601574971378/\",\"url\":\"https://www.facebook.com/groups/170601574971378/permalink/1256314859733372/\",\"time\":\"2025-11-20T03:53:53.000Z\",\"user\":{\"id\":\"1265709325587628\",\"name\":\"ขนุนสุดจึ้ง1066\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTI1NjMxNDg1OTczMzM3Mg==\",\"reactionLikeCount\":126,\"id\":\"UzpfSTEyNjU3MDkzMjU1ODc2Mjg6Vks6MTI1NjMxNDg1OTczMzM3Mg==\",\"legacyId\":\"1256314859733372\",\"attachments\":[{\"thumbnail\":\"https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/584414193_25667953619463411_977568497204611741_n.jpg?stp=dst-jpg_p552x414_tt6&_nc_cat=1&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Q7NJquLWg6kQ7kNvwFYrf4Y&_nc_oc=Adnu_xTCsr3OQWujxOuVfGBmjGYwNZSDHYdkcv30c08063YubrrQlbA3t-OxJ_s3x60&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_Afh_y_3f8RmCWemXF4nAO7vqizXeT65LYfoAiR1MwO1wDg&oe=6924AC51\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/584414193_25667953619463411_977568497204611741_n.jpg?stp=dst-jpg_p552x414_tt6&_nc_cat=1&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Q7NJquLWg6kQ7kNvwFYrf4Y&_nc_oc=Adnu_xTCsr3OQWujxOuVfGBmjGYwNZSDHYdkcv30c08063YubrrQlbA3t-OxJ_s3x60&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_Afh_y_3f8RmCWemXF4nAO7vqizXeT65LYfoAiR1MwO1wDg&oe=6924AC51\",\"height\":513,\"width\":552},\"__isMedia\":\"Photo\",\"accent_color\":\"FFFFFFFF\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/1265709325587628/photos/gm.1256314859733372/25667953616130078/?type=3\",\"id\":\"25667953616130078\",\"ocrText\":\"May be a graphic of floor plan, blueprint, map and text that says 'ชอยไม่มีชื่อ 34.00 ม. 26.00 ทบดสกา คสล.6(7)ม ม. 24.00 24.00ม. ม. ทางส่วนบุคคล'\"}],\"likesCount\":126,\"sharesCount\":2,\"commentsCount\":110,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/170601574971378/permalink/1256314859733372/?comment_id=1256422926389232\",\"id\":\"Y29tbWVudDoxMjU2MzE0ODU5NzMzMzcyXzEyNTY0MjI5MjYzODkyMzI=\",\"feedbackId\":\"ZmVlZGJhY2s6MTI1NjMxNDg1OTczMzM3Ml8xMjU2NDIyOTI2Mzg5MjMy\",\"date\":\"2025-11-20T04:10:07.000Z\",\"text\":\"ไม่ใช่ค่ะ บ้านเราก้อแบบนี้ เขบอกว่าเหลี่ยมเพชร นะคะ อยู่แล้วรวย\",\"profileUrl\":\"https://www.facebook.com/pusadee.mukai\",\"profilePicture\":\"https://scontent-dfw5-3.xx.fbcdn.net/v/t39.30808-1/571198327_25149456088020208_765989665652780562_n.jpg?stp=c0.0.768.768a_cp0_dst-jpg_s32x32_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ltBqN9AURbMQ7kNvwFOAp1c&_nc_oc=AdlL00DS24AWrLFNpxMMl71vreCexLQsMrwBmb8J9Zf__J3Gc_za0-tSsQYUK9Z93Ao&_nc_zt=24&_nc_ht=scontent-dfw5-3.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_AfhWLSoV265sj-kIqHkVypSxH2Ko7ACyd9lcTi7is9sLBg&oe=69247C71\",\"profileId\":\"pfbid0Tda9eXZtLhBY8mPKBgaiD4ek1FeQfNfEebcrQwKuYXEdAockzosqVGxfuXVKUEmbl\",\"profileName\":\"Judy Pusadee Mukai\",\"likesCount\":\"20\",\"threadingDepth\":0},{\"commentUrl\":\"https://www.facebook.com/groups/170601574971378/permalink/1256314859733372/?comment_id=1256426346388890\",\"id\":\"Y29tbWVudDoxMjU2MzE0ODU5NzMzMzcyXzEyNTY0MjYzNDYzODg4OTA=\",\"feedbackId\":\"ZmVlZGJhY2s6MTI1NjMxNDg1OTczMzM3Ml8xMjU2NDI2MzQ2Mzg4ODkw\",\"date\":\"2025-11-20T04:16:55.000Z\",\"text\":\"4เหลี่ยมครับ\",\"profileUrl\":\"https://www.facebook.com/mahayongk\",\"profilePicture\":\"https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-1/481265016_9717524688258517_1795282534283456957_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Vtfpv_YztsIQ7kNvwGDlPKA&_nc_oc=Adka5khfq8AgUcQllsX_lIzxrYzvi-v85dHFtJgSgHDklro8MkA31XklZCCPlQ73818&_nc_zt=24&_nc_ht=scontent-dfw5-2.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_AfiQXw6svQSs3KITsoMwlULp9m07WtIGjwavNgn0IQuZ3A&oe=69248985\",\"profileId\":\"100000032486895\",\"profileName\":\"Dhanayong Kimseang\",\"likesCount\":\"1\",\"threadingDepth\":0}],\"facebookId\":\"170601574971378\",\"groupTitle\":\"อวดบ้านกันนะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"107868514852005\"},\"inputUrl\":\"https://www.facebook.com/groups/170601574971378/\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/170601574971378/\",\"url\":\"https://www.facebook.com/groups/170601574971378/permalink/1256334476398077/\",\"time\":\"2025-11-20T03:53:49.000Z\",\"user\":{\"id\":\"100001137623436\",\"name\":\"Mint Nathathai Boonmaseub\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTI1NjMzNDQ3NjM5ODA3Nw==\",\"reactionLikeCount\":3,\"id\":\"UzpfSTEwMDAwMTEzNzYyMzQzNjpWSzoxMjU2MzM0NDc2Mzk4MDc3\",\"legacyId\":\"1256334476398077\",\"attachments\":[{\"mediaset_token\":\"pcb.1256334476398077\"},{\"thumbnail\":\"https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/583201082_25031881293099779_4387294191343725472_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=FNA4rSkSKkYQ7kNvwEQzNxL&_nc_oc=Adn4bQL8HK4FvEtbOlIrK1aSSLO6jyhWVVc_WxbvTmTNVuWWi9Mgy-e9UcQ7UyKmqnE&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_AfjxlfnzVidWDt5k1SaUEvT45P3RmYqRtVKso_REEbwHrA&oe=692487C1\",\"__typename\":\"Photo\",\"image\":{\"uri\":\"https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/583201082_25031881293099779_4387294191343725472_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=FNA4rSkSKkYQ7kNvwEQzNxL&_nc_oc=Adn4bQL8HK4FvEtbOlIrK1aSSLO6jyhWVVc_WxbvTmTNVuWWi9Mgy-e9UcQ7UyKmqnE&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_AfjxlfnzVidWDt5k1SaUEvT45P3RmYqRtVKso_REEbwHrA&oe=692487C1\",\"height\":590,\"width\":443},\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"id\":\"25031876313100277\",\"is_playable\":false,\"owner\":{\"__typename\":\"User\",\"id\":\"100001137623436\"},\"ocrText\":\"May be an image of sliding door\"},{\"thumbnail\":\"https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/585160164_25031881299766445_3034768663255183963_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=l2LfF05Hk0wQ7kNvwEU0fZ9&_nc_oc=Adkwb9KUphHVUUGvPOGqR8LVvfHzcSp8H67twD1wUykNdvGv2RnBtqCIRGFgvlCM6jw&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_AfiVpywwmjQYvIzpyYU3ZDnqkpsT5U1tRHoGKSBHrLyuMg&oe=6924AA6F\",\"__typename\":\"Photo\",\"image\":{\"uri\":\"https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/585160164_25031881299766445_3034768663255183963_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=l2LfF05Hk0wQ7kNvwEU0fZ9&_nc_oc=Adkwb9KUphHVUUGvPOGqR8LVvfHzcSp8H67twD1wUykNdvGv2RnBtqCIRGFgvlCM6jw&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=wfHGy7hu-X977TKtXz1Iuw&oh=00_AfiVpywwmjQYvIzpyYU3ZDnqkpsT5U1tRHoGKSBHrLyuMg&oe=6924AA6F\",\"height\":590,\"width\":443},\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"id\":\"25031876319766943\",\"is_playable\":false,\"owner\":{\"__typename\":\"User\",\"id\":\"100001137623436\"},\"ocrText\":\"May be an image of sliding door\"}],\"likesCount\":3,\"sharesCount\":0,\"commentsCount\":0,\"topComments\":[],\"facebookId\":\"170601574971378\",\"groupTitle\":\"อวดบ้านกันนะ\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"107868514852005\"},\"inputUrl\":\"https://www.facebook.com/groups/170601574971378/\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "WINDOW_DOOR"
+        ]
+      }
+    },
+    {
+      "originalText": "ประมาณนี้ครับ บ้านน็อคดาวน์250k",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "เพื่อนๆ ในกลุ่มท่านไหน แต่งห้องนอนสไตล์นี้บ้างค้าบ อยากดูไอเดียขอเพื่อนๆ แล้วก็แหล่งซื้อค้าบ 🖤",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "FUTURE_OWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "จ้างค่าแรงช่าง 100,000 ซื้อของเอง 200,000\n\nเสาฐานแผ่ หน้ากว้าง 5 นิ้ว แผ่นพื้น 20มม.\n\nกระเบื้องยางปูเอง  \n\nชั้นสอง 1 ห้องนอน 3*7.5ม.  1 ห้องน้ำ 3*1.5  \n\nระเบียงหน้าบ้าน 4*1.5 ม.\n\nบันได กว้าง 1 เมตร สูง 2 เมตร \n\nชั้นล่าง  1 ห้องอเนกประสงค์  5*6 ม.\n\nครัวเปิด 3* 5 ม.  ใต้ถุนนั่ง นอนเล่น 3*5 ม.\n\nระบบ แอร์ธรรมชาติ  หน้าต่างมุ้งลวด \n\nบ้านสวน หลังน้อย สามพ่อ แม่ ลูก อยู่มา ครบ1 ปี\n\nมีความสุขกับบรรยากาศ ธรรมชาติๆ  ใกล้เมือง ครับ\n\nห่างสุขุมวิท 3.5 กม  ptt 711 amazon 4 กม.\n\nตลาดสด 5 กม  รร.รัฐ  เอกชน 6 กม. สนบอู่ตะเภา 6 กม.\n\n รพ.สิริกิติ์ 8 . ทะเล 8.5 กม. แวะมาเที่ยว มาพักได้นะครับ  มีบ้านอีกหลัง เปิดให้เช่าพักรายวัน 14-25 ท่าน \n\nและมี Cafe' เล็กๆ บริการ ยินดีต้อนรับ ครับ\n\nฝาก เพจ fb ที่พัก \n\nบ้านไร่ อยู่สบาย baan rai yoosabay pool villa",
+      "classification": {
+        "intents": [
+          "SHOW_OFF",
+          "PROMOTE_SERVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM",
+          "BATHROOM",
+          "LIVING_ROOM",
+          "KITCHEN",
+          "BALCONY"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "SPC_FLOOR"
+        ]
+      }
+    },
+    {
+      "originalText": "ขออนุญาตสอบถามค่ะ ตอนนี้กำลังเลือกซื้อเครื่องซักผ้า โดยมีโจทย์คือ\n1. ผ้าหน้า\n2. ไม่เอาเครื่องอบ (เนื่องจากสามีไม่อนุมัติ)\n3. ขนาดตั้งแต่ 20 กก ขึ้นไป\nหมายเหตุ ที่บ้านมีแม่บ้าน สามารถซักผ้าได้ทุกวันค่ะ แต่อยากได้เครื่องใหญ่เพราะบ้านเราซักผ้าปูที่นอนทุกสัปดาห์ค่ะ\n\nทีนี้ จากโจทย์ข้างต้น ตอนแรกเล็ง LG 24 กิโลไว้ เพราะตอนนั้นรุ่นนี้เป็นรุ่นเดียวที่มีขนาด 20 กก. ขึ้นไป แต่ต่อมาเพิ่งมาเห็นว่า LG ออกรุ่นใหม่มา ฝาหน้า 20 กก. ราคาพอ ๆ กัน แต่อัน 20 กก. เป็นเทคโนโลยีใหม่กว่า สามารถดูดน้ำยาซักผ้า+น้ำยาปรับผ้านุ่มตามปริมาณของผ้าได้\n\nความยากกว่าเดิมคือรุ่น 20 กก. มีรุ่นพี่น้อง 🤣🤣 เป็นเครื่องอบในตัวด้วย ในราคาเพิ่มอีก 1000 มีทอน อย่างน้อย (1) สามีไม่น่าจะรู้ 🤣 หรือถ้ารู้ก็บ่นไรไม่ได้ เพราะเพิ่มเงินแค่พันเดียว (2) เครืองอบผ้า อย่างน้อย ๆ ก็ใช้อบรองเท้าผ้าใบเด็ก หรือพวกผ้าปูที่นอนผืนใหญ่ ๆ ได้\n\nเลยอยากทราบว่าถ้าเป็นเพื่อน ๆ จะแนะนำรุ่นไหนยังไงดีคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "มาแล้วค่ะ เพิ่มแผงโซล่าเซลล์ \nเดี๋ยวมาเล่าหลังติดตั้งเรียบร้อยค่ะ",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "ROOF"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DURING_CONSTRUCTION"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "ขอบคุนคะ",
+      "classification": {
+        "intents": [],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": null,
+        "materialCategories": []
+      }
+    }
+  ]
+}

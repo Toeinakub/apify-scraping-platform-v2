@@ -1,0 +1,619 @@
+{
+  "summary": {
+    "topIntents": [
+      {
+        "count": 16,
+        "intent": "ASK_ADVICE"
+      },
+      {
+        "count": 4,
+        "intent": "SHOW_OFF"
+      },
+      {
+        "count": 2,
+        "intent": "COMPLAIN"
+      },
+      {
+        "count": 2,
+        "intent": "SHARE_KNOWLEDGE"
+      },
+      {
+        "count": 1,
+        "intent": "ASK_PRICE"
+      }
+    ],
+    "topPersonas": [
+      {
+        "count": 19,
+        "persona": "HOMEOWNER"
+      },
+      {
+        "count": 1,
+        "persona": "FUTURE_OWNER"
+      }
+    ],
+    "topHouseZones": [
+      {
+        "zone": "GENERAL",
+        "count": 4
+      },
+      {
+        "zone": "KITCHEN",
+        "count": 3
+      },
+      {
+        "zone": "BEDROOM",
+        "count": 3
+      },
+      {
+        "zone": "LIVING_ROOM",
+        "count": 2
+      },
+      {
+        "zone": "FACADE",
+        "count": 2
+      },
+      {
+        "zone": "GARDEN",
+        "count": 2
+      },
+      {
+        "zone": "ROOF",
+        "count": 1
+      },
+      {
+        "zone": "BATHROOM",
+        "count": 1
+      },
+      {
+        "zone": "FAÇADE",
+        "count": 1
+      }
+    ],
+    "topPainPoints": [
+      {
+        "count": 4,
+        "painPoint": "DURABILITY"
+      },
+      {
+        "count": 3,
+        "painPoint": "COST_CONFUSION"
+      },
+      {
+        "count": 2,
+        "painPoint": "PRODUCT_SELECTION_CONFUSION"
+      },
+      {
+        "count": 1,
+        "painPoint": "SPACE_LIMIT"
+      },
+      {
+        "count": 1,
+        "painPoint": "LEAKING"
+      },
+      {
+        "count": 1,
+        "painPoint": "HEAT"
+      },
+      {
+        "count": 1,
+        "painPoint": "NOISE"
+      },
+      {
+        "count": 1,
+        "painPoint": "DIRT"
+      },
+      {
+        "count": 1,
+        "painPoint": "CONTRACTOR_QUALITY"
+      },
+      {
+        "count": 1,
+        "painPoint": "HUMIDITY_ODOR"
+      }
+    ],
+    "topJourneyStages": [
+      {
+        "count": 8,
+        "stage": "POST_CONSTRUCTION_ISSUE"
+      },
+      {
+        "count": 4,
+        "stage": "PLANNING"
+      },
+      {
+        "count": 3,
+        "stage": "DESIGNING"
+      },
+      {
+        "count": 2,
+        "stage": "CONTRACTOR_SELECTION"
+      },
+      {
+        "count": 1,
+        "stage": "DURING_CONSTRUCTION"
+      },
+      {
+        "count": 1,
+        "stage": "SELECTING_MATERIAL"
+      }
+    ],
+    "topMaterialCategories": [
+      {
+        "count": 3,
+        "category": "WINDOW_DOOR"
+      },
+      {
+        "count": 3,
+        "category": "OTHER"
+      },
+      {
+        "count": 2,
+        "category": "PAINT"
+      },
+      {
+        "count": 1,
+        "category": "METAL_SHEET"
+      },
+      {
+        "count": 1,
+        "category": "GYPSUM_BOARD"
+      },
+      {
+        "count": 1,
+        "category": "BUILT_IN"
+      }
+    ]
+  },
+  "totalItems": 20,
+  "classifiedItems": [
+    {
+      "originalText": "ห้องครัวกว้าง 3 เมตร ยาว 4.2 เมตร ทำเคาเตอร์1ข้าง และเคาเตอร์ไอส์แลนด์ แล้วทางเดินจะแคบเกินไปไหมคับ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "KITCHEN"
+        ],
+        "painPoints": [
+          "SPACE_LIMIT"
+        ],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "สวัสดีค่ะ อยากสอบถามเป็นความรู้หน่อยค่ะ 🙏\n-\nบันไดเหล็กกาวานไนซ์ สภาพแบบนี้ทาสีรองพื้นหรือยังคะ พอดีคุยกับช่าง ช่างบอกว่าทาแล้ว แต่ตอนไปร้านสีเอาภาพให้เขาดูเขาบอกว่าเหมือนยังไม่ทา และก็อยากทราบขั้นตอน สภาพแบบในรูปนี้ช่างเขาต้องทำอะไรต่อ มีทารองพื้นรอบที่สองมั้ยหรือทาสีจริงเลย  😔 \n-\nปล. ที่ถกกันเรื่องนี้ เพราะตอนแรกทางเราขอเปลี่ยนสีบันไดจากดำเป็นขาว แต่ทางช่างบอกว่าได้ทารองพื้นสีเทาไปแล้ว ถ้าทาสีขาวจะคิดเพิ่มเพราะต้องขัดใหม่และทาสีทับหลายครั้งเพิ่มมากกว่าสีเข้ม(จาก 3 เป็น 6 ครั้ง) แต่ทางร้านสีบอก ทาขาวได้ปกติต่อให้รองพื้นเป็นสีเทา (ไม่เกิน 3 ครั้ง) สีเป็นสีสำหรับทากาวานไนซ์โดยเฉพาะนะคะ เผื่อมีผู้รู้มาตอบ (แต่กรณีนี่ทางเราเลือกสีเทาอ่อนไปแล้วค่ะ ไม่ทาสีขาวแล้ว แต่ยังติดใจอยู่เฉยๆค่ะ)",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [
+          "COST_CONFUSION",
+          "PRODUCT_SELECTION_CONFUSION"
+        ],
+        "journeyStages": [
+          "DURING_CONSTRUCTION"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "PAINT"
+        ]
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/221420775471534\",\"url\":\"https://www.facebook.com/groups/221420775471534/permalink/1967772464169681/\",\"time\":\"2025-11-20T06:41:18.000Z\",\"user\":{\"id\":\"100001094191636\",\"name\":\"นัสรี เจ๊ะเเล\"},\"text\":\"\",\"topReactionsCount\":1,\"feedbackId\":\"ZmVlZGJhY2s6MTk2Nzc3MjQ2NDE2OTY4MQ==\",\"reactionLikeCount\":3,\"id\":\"UzpfSTEwMDAwMTA5NDE5MTYzNjpWSzoxOTY3NzcyNDY0MTY5Njgx\",\"legacyId\":\"1967772464169681\",\"attachments\":[{\"mediaset_token\":\"pcb.1967772464169681\",\"url\":\"https://www.facebook.com/media/set/?set=pcb.1967772464169681&type=1\",\"comet_product_tag_feed_overlay_renderer\":null},{\"thumbnail\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/586015861_25282658141353978_3667896565402142706_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=j7EkCJMGkR4Q7kNvwH_Eru5&_nc_oc=Admrx53-meFjW4ZuOXDbTvJ17ipnfS5fkryZfk_jBVZDLBlhOpaCAbqGCGHAesYwwvE&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfhWuDIfVPniQf-DDCIEBbLMHdmtoVoqkxcnFqo4Hi5nKQ&oe=6924A6AB\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/586015861_25282658141353978_3667896565402142706_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=j7EkCJMGkR4Q7kNvwH_Eru5&_nc_oc=Admrx53-meFjW4ZuOXDbTvJ17ipnfS5fkryZfk_jBVZDLBlhOpaCAbqGCGHAesYwwvE&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfhWuDIfVPniQf-DDCIEBbLMHdmtoVoqkxcnFqo4Hi5nKQ&oe=6924A6AB\",\"height\":590,\"width\":443},\"id\":\"25282649701354822\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100001094191636\"},\"ocrText\":\"May be an image of lighting and indoors\"},{\"thumbnail\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/586264292_25282658198020639_3280549159646073462_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=FyIbnDzKoREQ7kNvwHMucEv&_nc_oc=AdkcW7XJiss4UdK-8GCJ2O8Q_19BXp02EpAl-_2HH3W3dkyl5uBv_u-HqQ_9hjw0iVA&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfifeFihDjeh4yyZQZKMKamDdYVzAC8A7cxMA8SrBexNqQ&oe=69248953\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/586264292_25282658198020639_3280549159646073462_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=FyIbnDzKoREQ7kNvwHMucEv&_nc_oc=AdkcW7XJiss4UdK-8GCJ2O8Q_19BXp02EpAl-_2HH3W3dkyl5uBv_u-HqQ_9hjw0iVA&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfifeFihDjeh4yyZQZKMKamDdYVzAC8A7cxMA8SrBexNqQ&oe=69248953\",\"height\":590,\"width\":443},\"id\":\"25282649718021487\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100001094191636\"},\"ocrText\":\"No photo description available.\"},{\"thumbnail\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/584742130_25282658384687287_9041272747194148834_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=y9FVEpBgivoQ7kNvwFZo4ZR&_nc_oc=Adl2DzvXQlF5HpQqlnfK4HbufQqaTMUtRfozLxwp22OR2rNG6dDmrZ_muaaflgu580o&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfhrqOCkyDdM6ApcQQTOqfNggtb5fojZrJZXknRpWv1aTg&oe=6924AB31\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/584742130_25282658384687287_9041272747194148834_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=y9FVEpBgivoQ7kNvwFZo4ZR&_nc_oc=Adl2DzvXQlF5HpQqlnfK4HbufQqaTMUtRfozLxwp22OR2rNG6dDmrZ_muaaflgu580o&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfhrqOCkyDdM6ApcQQTOqfNggtb5fojZrJZXknRpWv1aTg&oe=6924AB31\",\"height\":590,\"width\":443},\"id\":\"25282649988021460\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100001094191636\"},\"ocrText\":\"May be an image of indoors\"},{\"thumbnail\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/585467923_25282658584687267_5591943277480798800_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=-ojROBzmU7YQ7kNvwGZiY12&_nc_oc=AdnVx37h08nC5Nmu-eNHCpENFF3Rvcj7UbkJaxdDYYz-yVo3cRoivXtnsVaU0gwO4K8&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfiDrXIOyeaLE5Rd3Hyrk9uhkDFtIzGttxCsnM7orG7fyw&oe=6924A70F\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/585467923_25282658584687267_5591943277480798800_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=-ojROBzmU7YQ7kNvwGZiY12&_nc_oc=AdnVx37h08nC5Nmu-eNHCpENFF3Rvcj7UbkJaxdDYYz-yVo3cRoivXtnsVaU0gwO4K8&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfiDrXIOyeaLE5Rd3Hyrk9uhkDFtIzGttxCsnM7orG7fyw&oe=6924A70F\",\"height\":590,\"width\":443},\"id\":\"25282650031354789\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100001094191636\"},\"ocrText\":\"May be an image of lighting and indoors\"},{\"thumbnail\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/584810337_25282658344687291_5934466483530674213_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=o4I5cNcqVrsQ7kNvwHs5u82&_nc_oc=Adn4YX5ksOc1T1W798N0NVrNxw1PpQIT4iNXxGxRXS-WHU3MS_9tKyo7eF2vbokkJ6Y&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_Afih7epfk9jCqAWz_gRuDRyaQhmjBNkFXt5tLO8tMLXpzQ&oe=6924943F\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-6/584810337_25282658344687291_5934466483530674213_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=o4I5cNcqVrsQ7kNvwHs5u82&_nc_oc=Adn4YX5ksOc1T1W798N0NVrNxw1PpQIT4iNXxGxRXS-WHU3MS_9tKyo7eF2vbokkJ6Y&_nc_zt=23&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_Afih7epfk9jCqAWz_gRuDRyaQhmjBNkFXt5tLO8tMLXpzQ&oe=6924943F\",\"height\":278,\"width\":590},\"id\":\"25282655964687529\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"100001094191636\"},\"ocrText\":\"No photo description available.\"}],\"likesCount\":3,\"sharesCount\":0,\"commentsCount\":1,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1967772464169681/?comment_id=1967777217502539\",\"id\":\"Y29tbWVudDoxOTY3NzcyNDY0MTY5NjgxXzE5Njc3NzcyMTc1MDI1Mzk=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2Nzc3MjQ2NDE2OTY4MV8xOTY3Nzc3MjE3NTAyNTM5\",\"date\":\"2025-11-20T06:43:32.000Z\",\"text\":\"Where do you want to go? There is nothing upstairs for which you require stairs?\",\"profilePicture\":\"https://scontent.fpit1-1.fna.fbcdn.net/v/t39.30808-1/467745782_8415912441839401_231098028381903719_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=YT0Sri8-lbgQ7kNvwGPVQeg&_nc_oc=AdlYogDYXG4ukXsiw-2RGhC0IyK5GaRQCdeirw2HSK4sJswshPtw29rgw2g7_PvMhxw&_nc_zt=24&_nc_ht=scontent.fpit1-1.fna&_nc_gid=sv9NuZsHEpj6boHUz96M3A&oh=00_AfhtkmRRtdoUBlaXiDRxL8xYxWbEB5lo4YnTlHHacm-A-Q&oe=6924A35A\",\"profileId\":\"100002621859374\",\"profileName\":\"Uli Kruse\",\"likesCount\":\"0\",\"threadingDepth\":0}],\"facebookId\":\"221420775471534\",\"groupTitle\":\"คนดีไซน์\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"659858453873692\"},\"inputUrl\":\"https://www.facebook.com/groups/221420775471534\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "LIVING_ROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "จะต่อหน้าบ้านเพื่อนๆช่วยตัดสินใจหน่อยค่ะว่าแบบใหน แข็งแรงและสวยงาม และทนแดด ทนแรงลม ทนฝน",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "FACADE"
+        ],
+        "painPoints": [
+          "DURABILITY"
+        ],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ขอคำแนะนำ แนวทาวการทำประตูรั้วบ้าน\nที่เหมาะสมสำหรับ เด็กเล็ก สุนัขขนาดกลาง และคนชรา (อนาคตอาจทำอัตโนมัติ)",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "PLANNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "WINDOW_DOOR"
+        ]
+      }
+    },
+    {
+      "originalText": "เจองู😅 น่าจะมากิบกบเขียด เพราะที่บ้านเหมือนทุ่งนา มีวิธีไม่ให้งูมามั้ยคะ หมานางยังไม่กลัวเลย ที่ทำงานบอกให้ฉีดไบก้อน ไม่ก็โยนลูกเหม็น\n#อนาคตถ้าถูกหวยจะปูคอนกรีตรอบบ้านเลยค่ะกลัว",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GARDEN"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "PLANNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "หลังคาห้องแถวรั่ว น้ำไหลตามแป ลงบนฝ้าแบบนี้เลยค่ะเกือบทุกห้อง สามารถแก้แบบไหนได้บ้างคะ ขอคำแนะนำหน่อยค่ะ ระหว่างรื้อใหม่ และมุงด้วยเมทัลชีท หรือมุงเมทัลชีททับเลย แบบไหนที่ช่วยลดเสียง และไม่ร้อนดีค่ะ และประหยัดงบค่ะ ขอบคุณมากค่ะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "ROOF"
+        ],
+        "painPoints": [
+          "LEAKING",
+          "HEAT",
+          "NOISE"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "METAL_SHEET"
+        ]
+      }
+    },
+    {
+      "originalText": "ขอคำแนะนำ ประตู ห้องน้ำ UPVC หน่อยค่ะ\n\nบางแบบ ราคาต่างกันค่อนข้างเยอะเป็นเพราะอะไรหรอคะ\n\nUPVC มีหลายเกรดไหมคะ\n\nพอดีในรายละเอียดสินค้า ก็ไม่ได้ลงไว้ว่าเป็นเกรดไหน\nเลยลังเล ว่าจะเลือกยังไงดีค่ะ\n\nและ การทา Epoxy น้ำมันเคลือบ ช่วยให้ทนทาน แข็งแรงมากขึ้นไหมคะ จำเป็นต้องทาไหมคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE",
+          "ASK_PRICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BATHROOM"
+        ],
+        "painPoints": [
+          "COST_CONFUSION",
+          "PRODUCT_SELECTION_CONFUSION",
+          "DURABILITY"
+        ],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "WINDOW_DOOR"
+        ]
+      }
+    },
+    {
+      "originalText": "สวัสดีครับ อยากได้กันสาดมาติดที่บ้านครับ อยากได้แบบสวยๆ แนะนำแบบไหนดีครับ\n\n1 แบบติดถาวร\n2 แบบม่านไฟฟ้าพับเก็บได้\n\nทั้ง 2 แบบมีข้อดีและข้อเสียแตกต่างกันยังไงครับ และความคงทน หรือมีแบบนวัตกรรมใหม่แนะนำได้เลยครับ \n\nขอบคุณสำหรับคำตอบครับ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "FAÇADE"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "PLANNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "สอบถามค่ะ บ้านมีพื้นที่สวนไม่ใหญ่มาก แต่ก็ใหญ่เกินไปที่จะจัดสวนเอง หาบริการจัดสวนในจังหวัดชลบุรียากมากๆ ค่ะ เจ้าที่ยิงแอดมีไม่กี่เจ้าเขาจะเลือกลูกค้าที่มีมูลค่าสูงไว้ก่อน ก็จะไม่สนใจเรา ส่วนเจ้าในกรุงเทพมีเยอะแต่เขาก็มีต้นทุนสูงกว่า เรียกขั้นต่ำสองสามแสน คนกลางๆอย่างเราอยากมีสวนสวยๆ ควรทำยังไงคะ🌴",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GARDEN"
+        ],
+        "painPoints": [
+          "COST_CONFUSION"
+        ],
+        "journeyStages": [
+          "CONTRACTOR_SELECTION"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/221420775471534\",\"url\":\"https://www.facebook.com/groups/221420775471534/permalink/1967703404176587/\",\"time\":\"2025-11-20T05:18:51.000Z\",\"user\":{\"id\":\"pfbid02E86dwNCYnfWS3QMCixk9D4yuGqSbSKvxYiW8YTaPu4rQyskF9ZnB21GKkdcZ78C7l\",\"name\":\"Kesatut Bombe\"},\"text\":\"\",\"topReactionsCount\":3,\"feedbackId\":\"ZmVlZGJhY2s6MTk2NzcwMzQwNDE3NjU4Nw==\",\"reactionLikeCount\":568,\"reactionLoveCount\":2,\"reactionCareCount\":1,\"id\":\"UzpfSTY1MTAzOTM3OTpWSzoxOTY3NzAzNDA0MTc2NTg3\",\"legacyId\":\"1967703404176587\",\"attachments\":[{\"thumbnail\":\"https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/580986764_10163277101364380_556547141078396066_n.jpg?stp=cp6_dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=yvnjB36lIX4Q7kNvwF3Yvf-&_nc_oc=AdmCU_uu-EFrdh4wTchfopj5fGTHHAfQRTo_M8F_Q7UvriG34EoiJgEv1SnJv7lQWY4&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=OB24DWEeYdz4otFkfikL_A&oh=00_AfhT8K6xCspAWXSF9AQ5BZJiLJzX_-_l0L0-AFO7wtIyEg&oe=69249E7F\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/580986764_10163277101364380_556547141078396066_n.jpg?stp=cp6_dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=yvnjB36lIX4Q7kNvwF3Yvf-&_nc_oc=AdmCU_uu-EFrdh4wTchfopj5fGTHHAfQRTo_M8F_Q7UvriG34EoiJgEv1SnJv7lQWY4&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=OB24DWEeYdz4otFkfikL_A&oh=00_AfhT8K6xCspAWXSF9AQ5BZJiLJzX_-_l0L0-AFO7wtIyEg&oe=69249E7F\",\"height\":540,\"width\":720},\"__isMedia\":\"Photo\",\"accent_color\":\"FF9AA3AC\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=10163277101354380&set=gm.1967703404176587&type=3\",\"id\":\"10163277101354380\",\"ocrText\":\"No photo description available.\"}],\"likesCount\":571,\"sharesCount\":48,\"commentsCount\":35,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1967703404176587/?comment_id=1967740634172864\",\"id\":\"Y29tbWVudDoxOTY3NzAzNDA0MTc2NTg3XzE5Njc3NDA2MzQxNzI4NjQ=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2NzcwMzQwNDE3NjU4N18xOTY3NzQwNjM0MTcyODY0\",\"date\":\"2025-11-20T05:28:26.000Z\",\"text\":\"เข้าดูที่เพจนี้ได้ค่ะ กำแพงกันดิน รั้วคอนกรีตสำเร็จ https://www.facebook.com/share/14JhL8xhJTM/?mibextid=wwXIfr\",\"profilePicture\":\"https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-1/579871631_2011620123030222_5827129701337382671_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Ll6gd_JEHOwQ7kNvwGzDCRd&_nc_oc=AdmDDfkT3e1b2mBv_e90IkjpaAOLSUSkb63KhrXTZqzXKAuuk4cZG3k0fV46TKg7Pzs&_nc_zt=24&_nc_ht=scontent-lga3-3.xx&_nc_gid=OB24DWEeYdz4otFkfikL_A&oh=00_Afj13wUXQsLwUX8hSUNrNR_ILNB9UekXZDZHiBE-JK88zg&oe=69247D14\",\"profileId\":\"100025467610635\",\"profileName\":\"Kan Amornrat\",\"likesCount\":\"10\",\"threadingDepth\":0},{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1967703404176587/?comment_id=1967741007506160\",\"id\":\"Y29tbWVudDoxOTY3NzAzNDA0MTc2NTg3XzE5Njc3NDEwMDc1MDYxNjA=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2NzcwMzQwNDE3NjU4N18xOTY3NzQxMDA3NTA2MTYw\",\"date\":\"2025-11-20T05:29:05.000Z\",\"text\":\"ตร.ม.ละประมาณ 2,500-4,500 ค่ะ ราคาขึ้นอยู่กับสภาพพื้นที่และความสูง\",\"profileUrl\":\"https://www.facebook.com/bybeau\",\"profilePicture\":\"https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-1/559027980_10162350871018579_7349256881270445279_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ThJeQgwOCFEQ7kNvwFWu9mk&_nc_oc=AdnxPOoS88DIBG65SG4pFzeGPBG3A6fWPm3Lp3ovipDG4860CwjJmvua_iAW4VlOD2Y&_nc_zt=24&_nc_ht=scontent-lga3-2.xx&_nc_gid=OB24DWEeYdz4otFkfikL_A&oh=00_AfirW94fbAnFa-jCvDqk6fPR7qfsJqT9reK_TOZnTWD92Q&oe=6924A9F2\",\"profileId\":\"782568578\",\"profileName\":\"Beau Arpharat\",\"likesCount\":\"9\",\"threadingDepth\":0}],\"facebookId\":\"221420775471534\",\"groupTitle\":\"คนดีไซน์\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"659858453873692\"},\"inputUrl\":\"https://www.facebook.com/groups/221420775471534\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "พอจะมีวิธีแก้ไขไหมครับ ผู้รับเหมาบอกว่าต่างด้าวทำปูนยิบซั่มหกใส่ เค้าบอกล้างออก ผมพยายามขัด แต่ไม่ออกครับ\n\nเจอทีมงานแบบนี้ เหมือนตกนรก",
+      "classification": {
+        "intents": [
+          "COMPLAIN",
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [
+          "DIRT",
+          "CONTRACTOR_QUALITY"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "COMPLAIN",
+        "materialCategories": [
+          "GYPSUM_BOARD"
+        ]
+      }
+    },
+    {
+      "originalText": "งานบิ้วอิน ครัวสีพ่น ไม้เป็น HMR E2 ใข้ได้ไม่ถึงเดือน สีลอก ไม่ทราบว่าเกิดจากสาเหตุอะไี และแก้ไขยังไงดีคะ",
+      "classification": {
+        "intents": [
+          "COMPLAIN",
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "KITCHEN"
+        ],
+        "painPoints": [
+          "DURABILITY"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "COMPLAIN",
+        "materialCategories": [
+          "BUILT_IN"
+        ]
+      }
+    },
+    {
+      "originalText": "รบกวนแนะนำ\nคนตรวจรับบ้านหน่อยค่ะ\nอยู่เพชรบุรีค่ะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "FUTURE_OWNER"
+        ],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [
+          "CONTRACTOR_SELECTION"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ครัวโครงสร้างเหล็ก ทำเองที่บ้าน\n*หน้าบานไม้ของดก่าสภาพดี เอามาทาสีตามชอบ อนาคตถ้าเบื่อ ทาสีใหม่ได้ เหมือนทาสีประตู ไม่ยุ่งยาก \n*บานพับเปลี่ยนใหม่ \n*ซิงค์ล้างจาน เอาของเก่ามาใช้\n*ก๊อกซื้อใหม่ เค้าบอกรับประกันตลอดชีพ\n*เตาไฟฟ้า เป็น Induction ของเก่าสภาพดีมาก\n*มือจับเก่าเก็บ ซื้อมาจากอเมริกาเมื่อหลายทศวรรษ อย่างหนัก\n*เอาสมาร์ทบอร์ดมาตัดทำขอบบานตู้ เพื่ออุดช่องว่างเล็กๆน้อยๆ ดูเรียบร้อยขึ้น\n*ชั้นวางในตู้ ใช้เป็นกระจกหนามาก เอาของเก่ามาใช้\n\nค่าอุปกรณ์ประมาณ 20,000 กว่าบาท ไม่รวมค่าแรงช่าง ใช้เวลาไปเกือบ 10 วัน\n\nเสร็จเรียบร้อย พร้อมใช้งาน",
+      "classification": {
+        "intents": [
+          "SHOW_OFF",
+          "SHARE_KNOWLEDGE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "KITCHEN"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "เตียงขนาด 5 ฟุต ใช้งานมา 10 ปี ++ ตอนนี้แผ่นไม้รองที่นอนเปื่อยจ้ะ มันหักตามแนวคานที่รองแผ่นไม้ กลายเป็นเตียงพื้นทรุด ที่นอนหลุบลงไปตรงมุม ถ้าเราจะเปลี่ยนแค่แผ่นไม้ ไปสั่งซื้อได้ที่ไหนคะ ร้านเฟอร์นิเจอร์เขาจะสั่งทําแยกขายให้เราได้ไหม",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [
+          "DURABILITY"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "ขออนุญาติสอบถามนะครับ กรณีที่ปลั๊กไฟอยู่ใกล้\nก็อกน้ำแบบนี้ จะเป็นอะไรไหมครับ หรือ ปลั๊กไฟต้องควรที่จะต้องใส่ฝาครอบกันน้ำถึงจะดีครับ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "กลิ่นเหม็นจากไม้อัดปูเตียง แก้ปัญหายังไงคะ วันอาทิตย์ที่ผ่านมาเอาออกมาตากแดด กลิ่นไม้ก็ยังไม่หาย เอาหอมหัวใหญ่มาวาง ก็ยังไม่หาย พยามเปิดประตู แต่ไม่ได้เปิดหน้าต่างไว้ เพราะไม่มีคนอยุ่บ้าน เหนือยใจกับกลิ่นไม้อัดคะ ไม้อัดปูเตียงกับเตียงเป็นของเดิมจากเจ้าของบ้านเดิม ดิฉันมาซื้อบ้านต่อ เปลี่ยนแค่ฟูกนอน ของอีเกีย แต่ใช้เตียงอันเดิม รบกวนช่วยแนะนำการกำจัดกลิ่นไม้อัดปูเตียงด้วยคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [
+          "HUMIDITY_ODOR"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "ขออนุญาตสอบถามครับ บ้านเอื้ออาทรแบบนี้ สามารถทุบผนังหน้าบ้านชั้นล่างออก แล้วขยับออกมาถึงขอบผนังหน้า ชั้นบน แล้วติดประตูบานเลื่อนขนาด ก 3 ส 2 ม.เพื่อขยายห้องโถงชั้นล่าง ได้มั้ยครับ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "FACADE",
+          "LIVING_ROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "PLANNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "WINDOW_DOOR"
+        ]
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/221420775471534\",\"url\":\"https://www.facebook.com/groups/221420775471534/permalink/1967366594210268/\",\"time\":\"2025-11-19T17:33:58.000Z\",\"user\":{\"id\":\"pfbid02DbQhwBUn5FzqKitCGPK2cJTEbBMGhoUb88pgSKtuH57PSqKknfexaZSeoppy3JwJl\",\"name\":\"Bink Jindanush\"},\"text\":\"\",\"topReactionsCount\":4,\"feedbackId\":\"ZmVlZGJhY2s6MTk2NzM2NjU5NDIxMDI2OA==\",\"reactionLikeCount\":190,\"reactionLoveCount\":1,\"reactionCareCount\":1,\"reactionWowCount\":1,\"id\":\"UzpfSTE1Njg4MzU4MzA6Vks6MTk2NzM2NjU5NDIxMDI2OA==\",\"legacyId\":\"1967366594210268\",\"attachments\":[{\"mediaset_token\":\"pcb.1967366594210268\",\"url\":\"https://www.facebook.com/media/set/?set=pcb.1967366594210268&type=1\",\"comet_product_tag_feed_overlay_renderer\":null},{\"thumbnail\":\"https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/585359504_10238505322563019_5551974134702074879_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wfFl9QfXp8wQ7kNvwHnyfhI&_nc_oc=AdlkySZMUH-2YW4MgLg5cEUYAu3Eo0c2BgPXBQmSu6CoCci1wc28sVNVp6XE6DRpzVY&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=pio0Hq_OmxNs2v4fHjb1rg&oh=00_Afh0T-N-pi-zRlR9Za5sfLNf8METQovG5UPyB1MRzapQYw&oe=69247E66\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/585359504_10238505322563019_5551974134702074879_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=wfFl9QfXp8wQ7kNvwHnyfhI&_nc_oc=AdlkySZMUH-2YW4MgLg5cEUYAu3Eo0c2BgPXBQmSu6CoCci1wc28sVNVp6XE6DRpzVY&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=pio0Hq_OmxNs2v4fHjb1rg&oh=00_Afh0T-N-pi-zRlR9Za5sfLNf8METQovG5UPyB1MRzapQYw&oe=69247E66\",\"height\":590,\"width\":585},\"id\":\"10238505314562819\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"pfbid02DbQhwBUn5FzqKitCGPK2cJTEbBMGhoUb88pgSKtuH57PSqKknfexaZSeoppy3JwJl\"},\"ocrText\":\"May be an image of bed, lighting, indoors and bedroom\"},{\"thumbnail\":\"https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/585349768_10238505322683022_1506528309299461017_n.jpg?stp=cp6_dst-jpg_p565x565_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=0B7nX7U8wjwQ7kNvwFG1Xwe&_nc_oc=Adl5lUabH_jVlek1RfAZHyCN7261TbRbgIb_T5bfufNdvjqxpcgjHYHkjS_e-QwVtXA&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=pio0Hq_OmxNs2v4fHjb1rg&oh=00_Afhh2Ih0X6iMNCMfumKmbnlLgLVoaRxeP-nWdXUgbJgGLg&oe=6924AB3B\",\"__typename\":\"Photo\",\"is_playable\":false,\"image\":{\"uri\":\"https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/585349768_10238505322683022_1506528309299461017_n.jpg?stp=cp6_dst-jpg_p565x565_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=0B7nX7U8wjwQ7kNvwFG1Xwe&_nc_oc=Adl5lUabH_jVlek1RfAZHyCN7261TbRbgIb_T5bfufNdvjqxpcgjHYHkjS_e-QwVtXA&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=pio0Hq_OmxNs2v4fHjb1rg&oh=00_Afhh2Ih0X6iMNCMfumKmbnlLgLVoaRxeP-nWdXUgbJgGLg&oe=6924AB3B\",\"height\":565,\"width\":589},\"id\":\"10238505314642821\",\"__isMedia\":\"Photo\",\"photo_cix_screen\":null,\"copyright_banner_info\":null,\"owner\":{\"__typename\":\"User\",\"id\":\"pfbid02DbQhwBUn5FzqKitCGPK2cJTEbBMGhoUb88pgSKtuH57PSqKknfexaZSeoppy3JwJl\"},\"ocrText\":\"May be an image of bed, lighting, bedroom and indoors\"}],\"likesCount\":193,\"sharesCount\":78,\"commentsCount\":27,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1967366594210268/?comment_id=1967389567541304\",\"id\":\"Y29tbWVudDoxOTY3MzY2NTk0MjEwMjY4XzE5NjczODk1Njc1NDEzMDQ=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2NzM2NjU5NDIxMDI2OF8xOTY3Mzg5NTY3NTQxMzA0\",\"date\":\"2025-11-19T17:39:40.000Z\",\"text\":\"แบบ1 เหมือนวอเปเปอร์ แบบ2 Lime washed ค่ะ\",\"profileUrl\":\"https://www.facebook.com/lindatravellife\",\"profilePicture\":\"https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/346301467_1851516511900895_7291937209571161228_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=4ulfRQz-pbYQ7kNvwHv9Yxd&_nc_oc=AdmNwvwVrbL5cbd0FWKS_vJu24hMspSZ9t-_zJFsInl3mVFhd5mSQpYUjyRiIlaydoM&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=pio0Hq_OmxNs2v4fHjb1rg&oh=00_Afg6DcJNce1fCbMU-2wwvojfD3m-JSgZVlah4bVSl2UBSw&oe=69248680\",\"profileId\":\"pfbid0271W4GTAuZjXV66m3fanDhHUp6S9LvVZWzZJ4Xc72QUcJes6MHPL1LBUsi1aXRVuJl\",\"profileName\":\"Linda Lee\",\"likesCount\":\"2\",\"threadingDepth\":0},{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1967366594210268/?comment_id=1967402617539999\",\"id\":\"Y29tbWVudDoxOTY3MzY2NTk0MjEwMjY4XzE5Njc0MDI2MTc1Mzk5OTk=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2NzM2NjU5NDIxMDI2OF8xOTY3NDAyNjE3NTM5OTk5\",\"date\":\"2025-11-19T18:03:14.000Z\",\"text\":\"ภาพที่ 1 คือ ใช้วิธีการ Stucy ครับ หรือ ปูนสลัดดอก โดยการ พ่นเนื้อปูน หรือ ใช้ปูนกาวก่อนชั้นแรก แล้ว สลัดๆก้อนปูนมาทับอีกชั้น จากนั้นใช้เกียงฉาบปาด เนื้อปูนที่สลัดมาเป็นก้อนๆชั้นที่ 2 ให้เรียบ จะสวยงามก็ขึ้นอยู่กับ เซ้นของฝีมือช่างครับ จากนั้นค่อยทาสี \\nภาพที่ 2 คือสี Texture Lime wash หรือกลุ่มสี Texture color cement ครับ\\nมีให้เลือก 2 แบรนด์ที่ผมใช้หลักๆ จะมี 1. TOA 2. จระเข้ ครับ\",\"profileUrl\":\"https://www.facebook.com/Tects24\",\"profilePicture\":\"https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/531998151_30752539221060442_5015576537773872500_n.jpg?stp=c176.0.698.698a_cp0_dst-jpg_s32x32_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=7mp1hGoAez0Q7kNvwGpKHUG&_nc_oc=AdkY7jcjwq3XVWrMpT5XDp3Wcnbyc_YilblC0YbgwMtXR0HnIDFNlnAs9z5hcFvJaQM&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=pio0Hq_OmxNs2v4fHjb1rg&oh=00_AfiWjBjGD2ShJT0NjFz2jgssI8tjsqrMLvmfSIRrbdniHw&oe=6924A7C6\",\"profileId\":\"pfbid0rrtysc6Mo8tv6exb9KSinVXNgaEFpYNbWv9p5miWcUcaCRBZmiBQjCfSNQ9oozy8l\",\"profileName\":\"Oldperson Newperson\",\"likesCount\":\"21\",\"threadingDepth\":0}],\"facebookId\":\"221420775471534\",\"groupTitle\":\"คนดีไซน์\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"659858453873692\"},\"inputUrl\":\"https://www.facebook.com/groups/221420775471534\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF",
+          "SHARE_KNOWLEDGE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BEDROOM"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "PAINT"
+        ]
+      }
+    }
+  ]
+}
