@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 /lib/generated/prisma
+
+# Documentation with sensitive data
+PROJECT-DETAIL.md
+CLAUDE.md
+README.md
