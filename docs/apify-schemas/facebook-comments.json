@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Facebook Comments Scraper",
+    "description": "Extract data from hundreds of Facebook comments from one or multiple Facebook posts. Get comment text, timestamp, likes count and basic commenter info. Download the data in JSON, CSV, Excel and use it in apps, spreadsheets, and reports.",
+    "version": "0.0",
+    "x-build-id": "4qFIaktAqrceDmRZq"
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "startUrls"
+        ],
+        "properties": {
+          "startUrls": {
+            "title": "Facebook URLs",
+            "type": "array",
+            "description": "Valid facebook URL",
+            "items": {
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "title": "URL of a web page",
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "resultsLimit": {
+            "title": "Results amount",
+            "minimum": 1,
+            "type": "integer",
+            "description": "If this limit is not set as many results as possible are returned"
+          },
+          "includeNestedComments": {
+            "title": "Include comment replies",
+            "type": "boolean",
+            "description": "If checked, the actor will return up to 3 levels of comments/replies for each post. Note that each reply/comment will be returned as a separate result.",
+            "default": false
+          },
+          "viewOption": {
+            "title": "Comments mode",
+            "enum": [
+              "RANKED_THREADED",
+              "RECENT_ACTIVITY",
+              "RANKED_UNFILTERED"
+            ],
+            "type": "string",
+            "description": "Choose the way the comments are sorted",
+            "default": "RANKED_UNFILTERED"
+          }
+        }
+      }
+    }
+  }
+}

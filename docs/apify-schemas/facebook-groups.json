@@ -1,0 +1,78 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Facebook Groups Scraper",
+    "description": "Extract data from one or multiple public Facebook groups. Get group and post URLs, post text, comments, timestamp, likes and comments count, and basic commentator info. Download the data in JSON, CSV, and Excel and use it in apps, spreadsheets, and reports.",
+    "version": "0.0",
+    "x-build-id": "zoYaF7fnzOjdLt9je"
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "startUrls"
+        ],
+        "properties": {
+          "startUrls": {
+            "title": "🔗 Facebook group URLs",
+            "type": "array",
+            "description": "Insert a URL of a valid Facebook group. Only <strong>public</strong> Facebook groups can be scraped.",
+            "items": {
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "title": "URL of a web page",
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "resultsLimit": {
+            "title": "✍️ Number of posts",
+            "minimum": 1,
+            "type": "integer",
+            "description": "Select the number of posts you want to scrape. If this limit is not set, as many results as possible will be returned."
+          },
+          "viewOption": {
+            "title": "📜 Sorting order",
+            "enum": [
+              "CHRONOLOGICAL",
+              "RECENT_ACTIVITY",
+              "TOP_POSTS",
+              "CHRONOLOGICAL_LISTINGS"
+            ],
+            "type": "string",
+            "description": "Select sorting order by which the posts should be scraped. Please note that the <strong>Number of results</strong> field will be applied to New posts only. The BuySell items sorting will return results for BuySell groups only.",
+            "default": "CHRONOLOGICAL"
+          },
+          "searchGroupKeyword": {
+            "title": "Search by letter (words are allowed, but will not return any results in most cases)",
+            "type": "string",
+            "description": "Without logging in, search results are VERY limited, so searching by word will return nothing in most cases. To get more messages, it is recommended to use a one or two letter search and change the year."
+          },
+          "searchGroupYear": {
+            "title": "🗓 Search keyword by year",
+            "type": "string",
+            "description": "The scraper will extract Facebook posts by this year. To use this field, you need to fill in the <strong>Search by letter</strong> field above ↑."
+          },
+          "onlyPostsNewerThan": {
+            "title": "Posts newer than",
+            "pattern": "^(\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])(T[0-2]\\d:[0-5]\\d(:[0-5]\\d)?(\\.\\d+)?Z?)?$|^(\\d+)\\s*(minute|hour|day|week|month|year)s?$",
+            "type": "string",
+            "description": "Scrapes post from the provided date to the present day. The date should be in YYYY-MM-DD or full ISO absolute format or in relative format e.g. 1 days, 2 months, 3 years. The JSON input also supports adding time units (UTC timezone): Full or partial ISO timestamp (e.g., `2025-09-23T10:02:01`) as absolute time and relative time, e.g., `1 hour` or `2 minutes`."
+          }
+        }
+      }
+    }
+  }
+}

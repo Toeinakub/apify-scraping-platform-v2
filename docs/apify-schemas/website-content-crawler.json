@@ -1,0 +1,93 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Website Content Crawler",
+    "description": "Crawl websites and extract text content to feed AI models, LLM applications, vector databases, or RAG pipelines. The Actor supports rich formatting using Markdown, cleans the HTML, downloads files, and integrates well with 🦜🔗 LangChain, LlamaIndex, and the wider LLM ecosystem.",
+    "version": "0.3",
+    "x-build-id": "QsFvfU2lCOouAkxOf"
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "startUrls",
+          "proxyConfiguration"
+        ],
+        "properties": {
+          "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "One or more URLs of pages where the crawler will start.",
+            "items": {
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "title": "URL of a web page",
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "maxCrawlDepth": {
+            "title": "Max crawling depth",
+            "minimum": 0,
+            "type": "integer",
+            "description": "The maximum number of links starting from the start URL that the crawler will recursively follow. The start URLs have depth `0`, the pages linked directly from the start URLs have depth `1`, and so on.",
+            "default": 20
+          },
+          "maxCrawlPages": {
+            "title": "Max pages",
+            "minimum": 0,
+            "type": "integer",
+            "description": "The maximum number pages to crawl. It includes the start URLs, pagination pages, pages with no content, etc. The crawler will automatically finish after reaching this number.",
+            "default": 9999999
+          },
+          "crawlerType": {
+            "title": "Crawler type",
+            "enum": [
+              "playwright:adaptive",
+              "playwright:firefox",
+              "cheerio",
+              "jsdom",
+              "playwright:chrome"
+            ],
+            "type": "string",
+            "description": "Select the crawling engine",
+            "default": "playwright:firefox"
+          },
+          "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Enables loading the websites from IP addresses in specific geographies and to circumvent blocking.",
+            "default": {
+              "useApifyProxy": true
+            }
+          },
+          "saveMarkdown": {
+            "title": "Save Markdown",
+            "type": "boolean",
+            "description": "If enabled, the crawler converts the transformed HTML of all pages found to Markdown, and stores it under the `markdown` field in the output dataset.",
+            "default": true
+          },
+          "maxResults": {
+            "title": "Max results",
+            "minimum": 0,
+            "type": "integer",
+            "description": "The maximum number of resulting web pages to store. The crawler will automatically finish after reaching this number.",
+            "default": 9999999
+          }
+        }
+      }
+    }
+  }
+}

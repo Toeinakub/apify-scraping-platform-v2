@@ -1,0 +1,68 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Facebook Posts Scraper",
+    "description": "Extract data from hundreds of Facebook posts from one or multiple Facebook pages and profiles. Get post URL, post text, page or profile URL, timestamp, number of likes, shares, comments, and more. Download the data in JSON, CSV, and Excel and use it in apps, spreadsheets, and reports.",
+    "version": "0.0",
+    "x-build-id": "UnujnaGzyjZ0S28k7"
+  },
+  "servers": [
+    {
+      "url": "https://api.apify.com/v2"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "startUrls"
+        ],
+        "properties": {
+          "startUrls": {
+            "title": "Facebook URLs",
+            "type": "array",
+            "description": "Enter a valid Facebook page URL, e.g. <code>https://www.facebook.com/humansofnewyork/</code>. Note that you can only scrape public pages with this Actor, not personal profiles.",
+            "items": {
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "title": "URL of a web page",
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "resultsLimit": {
+            "title": "Results amount",
+            "minimum": 1,
+            "type": "integer",
+            "description": "If this limit is not set, only the initial page of results will be extracted."
+          },
+          "captionText": {
+            "title": "Include video transcript",
+            "type": "boolean",
+            "description": "Extract video transcript (if available).",
+            "default": false
+          },
+          "onlyPostsNewerThan": {
+            "title": "Posts newer than",
+            "pattern": "^(\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])(T[0-2]\\d:[0-5]\\d(:[0-5]\\d)?(\\.\\d+)?Z?)?$|^(\\d+)\\s*(minute|hour|day|week|month|year)s?$",
+            "type": "string",
+            "description": "Scrape posts from the provided date to the present day (or date set in 'Older than'). The date should be in YYYY-MM-DD absolute format or in relative format, e.g., 1 day, 2 months, 3 years. The JSON input also supports adding time units (UTC timezone): Full or partial ISO timestamp (e.g., `2025-09-23T10:02:01`) as absolute time and relative time, e.g., `1 hour` or `2 minutes`."
+          },
+          "onlyPostsOlderThan": {
+            "title": "Posts older than",
+            "pattern": "^(\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])(T[0-2]\\d:[0-5]\\d(:[0-5]\\d)?(\\.\\d+)?Z?)?$|^(\\d+)\\s*(minute|hour|day|week|month|year)s?$",
+            "type": "string",
+            "description": "Scrape posts from the provided date to the past (or date set in 'Newer than'). The date should be in YYYY-MM-DD or full ISO absolute format or in relative format e.g. 1 days, 2 months, 3 years. The JSON input also supports adding time units (UTC timezone): Full or partial ISO timestamp (e.g., `2025-09-23T10:02:01`) as absolute time and relative time, e.g., `1 hour` or `2 minutes`.\n\n"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id          String   @id @default(cuid())
+  title       String   @default("New Scraping Session")
+  type        ScraperType
+  status      SessionStatus @default(PENDING)
+
+  // Scraping parameters (stored as JSON)
+  parameters  Json
+
+  // Results
+  results     Json?
+  resultCount Int      @default(0)
+
+  // Classification metadata
+  sourceType    String?  // 'GENERAL_GROUP' | 'COMPETITOR_PAGE' | 'OWN_PAGE'
+  purpose       String?  // 'COMPETITOR_ANALYSIS' | 'CUSTOMER_INSIGHTS' | 'MARKETING_RESEARCH'
+  tags          Json?    // Array of strings: ['competitor', 'SCG', 'Q4-2024']
+  classificationEnabled Boolean @default(false)
+  classificationResults Json?  // Stores classification results (LLM-based)
+
+  // Metadata
+  startedAt   DateTime @default(now())
+  completedAt DateTime?
+  errorMessage String?
+  errorType   String?
+  errorDetails Json?
+  apifyRunId  String?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum ScraperType {
+  WEBSITE
+  FACEBOOK_POST
+  FACEBOOK_GROUP
+  FACEBOOK_COMMENT
+  RAG_BROWSER
+}
+
+enum SessionStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  PARTIAL_SUCCESS
+  FAILED
+}

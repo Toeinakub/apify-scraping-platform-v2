@@ -1,0 +1,299 @@
+{
+  "summary": {
+    "topIntents": [
+      {
+        "count": 7,
+        "intent": "ASK_ADVICE"
+      },
+      {
+        "count": 2,
+        "intent": "SHOW_OFF"
+      },
+      {
+        "count": 1,
+        "intent": "COMPLAIN"
+      }
+    ],
+    "topPersonas": [
+      {
+        "count": 9,
+        "persona": "HOMEOWNER"
+      }
+    ],
+    "topHouseZones": [
+      {
+        "zone": "GENERAL",
+        "count": 6
+      },
+      {
+        "zone": "FACADE",
+        "count": 1
+      },
+      {
+        "zone": "KITCHEN",
+        "count": 1
+      },
+      {
+        "zone": "ROOF",
+        "count": 1
+      },
+      {
+        "zone": "BATHROOM",
+        "count": 1
+      }
+    ],
+    "topPainPoints": [
+      {
+        "count": 1,
+        "painPoint": "DIRT"
+      },
+      {
+        "count": 1,
+        "painPoint": "LEAKING"
+      },
+      {
+        "count": 1,
+        "painPoint": "HEAT"
+      }
+    ],
+    "topJourneyStages": [
+      {
+        "count": 3,
+        "stage": "POST_CONSTRUCTION_ISSUE"
+      },
+      {
+        "count": 2,
+        "stage": "SELECTING_MATERIAL"
+      },
+      {
+        "count": 1,
+        "stage": "DURING_CONSTRUCTION"
+      },
+      {
+        "count": 1,
+        "stage": "DESIGNING"
+      }
+    ],
+    "topMaterialCategories": [
+      {
+        "count": 2,
+        "category": "OTHER"
+      },
+      {
+        "count": 1,
+        "category": "PAINT"
+      },
+      {
+        "count": 1,
+        "category": "ROOF_TILE"
+      }
+    ]
+  },
+  "totalItems": 10,
+  "classifiedItems": [
+    {
+      "originalText": "ขออนุญาตเจ้าของบ้านนะคะ อยากทราบว่าผนังแบบนี้หาซื้อได้ที่ไหนหรอคะ🙏",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "อยากถามคนที่ทำพื้นที่นั่งเล่นภายนอกหน่อยคะ ดูแลยังไง ทำไงให้ไม่มี จิ้งจก แมลงต่างๆคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "ขอปรึกษาผู้รู้หน่อยค่ะ รอยแบบนี้แก้ยังไงดีคะ มีรอบบ้านเลยค่ะ ข้างหน้าบ้านยิ่งเห็นชัดเลยค่ะ ควรแก้ด้วยวิธีไหนดีคะ ช่างบอกให้ทาสีมืดๆหน่อยแล้วจะไม่เห็นรอยค่ะ 🥺",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL",
+          "FACADE"
+        ],
+        "painPoints": [
+          "DIRT"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": [
+          "PAINT"
+        ]
+      }
+    },
+    {
+      "originalText": "เอาผลงานที่ทำมาให้ชมกันครับ เผื่อเป็นไอเดียให้หลายๆท่าน สถานที่ จ.ฉะเชิงเทรา สำหรับงานนี้เป็นชุดครัว วัสดุหลักๆเป็น hmr เคลือบเมลามีนขาวด้านใน ภายนอกจะทำสีพ่นอุตสาหกรรม ส่วน top จะเป็นไม้ยางประสาน 25 มิล (ไม้จริง) ภายในลิ้นชักจะเป็นไม้จริงทั้งหมด  และพวกอุปกรณ์ฟิตติ้งจะเป็นแบบ softclose ครับ ขนาดห้องนี้ประมาณ 3x3 เมตร ครัวจะสูงที่ 85 cm ลึก 60 cm ราคาประมาณ 9หมื่นบาท  ใช้เวาลาติดตั้งประมาณ 2-3 วันครับ",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "KITCHEN"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DURING_CONSTRUCTION"
+        ],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": [
+          "OTHER"
+        ]
+      }
+    },
+    {
+      "originalText": "หลังคาลอนคู่ใช้ครอบข้าง น้ำรั่วซึม ผิดพลาดตรงไหนครับ",
+      "classification": {
+        "intents": [
+          "COMPLAIN",
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "ROOF"
+        ],
+        "painPoints": [
+          "LEAKING"
+        ],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "COMPLAIN",
+        "materialCategories": [
+          "ROOF_TILE"
+        ]
+      }
+    },
+    {
+      "originalText": "อัพเดทค่ะ ☺️\nพอเข้าไปดูที่บ้าน ติดแบบนี้ทั้ง 2 เครื่อง จากทั้งหมด 3 เครื่อง ช่างยอมแก้ไขงานให้ค่ะ ขอบคุณทุกๆคอมเม้นนะคะ\nเพื่อนๆคะ\nตำแหน่งแอร์ ติดตรงนี้ดีแล้ว หรือควรขยับมาตรงกับหน้าต่างดีคะ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "POST_CONSTRUCTION_ISSUE"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "รบกวนขอไอเดีย การตกแต่ง ตรงที่วงกลมหน่อยค่ะ (🙏ขอบคุณล่วงหน้าค่ะ)",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [
+          "DESIGNING"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "กระเบื้องห้องน้ำบริเวณนี้  โดนแดดบ่ายตรงๆ14.00 ถึง 17:00 น ทุกวัน ระยะยาว  จะมีผลอะไรไหมครับ",
+      "classification": {
+        "intents": [
+          "ASK_ADVICE"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "BATHROOM"
+        ],
+        "painPoints": [
+          "HEAT"
+        ],
+        "journeyStages": [
+          "SELECTING_MATERIAL"
+        ],
+        "primaryIntent": "ASK_ADVICE",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "{\"facebookUrl\":\"https://www.facebook.com/groups/221420775471534\",\"url\":\"https://www.facebook.com/groups/221420775471534/permalink/1965236944423233/\",\"time\":\"2025-11-17T06:11:13.000Z\",\"user\":{\"id\":\"100024083494487\",\"name\":\"Nicha Sitticharoenporn\"},\"text\":\"\",\"topReactionsCount\":2,\"feedbackId\":\"ZmVlZGJhY2s6MTk2NTIzNjk0NDQyMzIzMw==\",\"reactionLikeCount\":165,\"reactionWowCount\":1,\"id\":\"UzpfSTEwMDAyNDA4MzQ5NDQ4NzpWSzoxOTY1MjM2OTQ0NDIzMjMz\",\"legacyId\":\"1965236944423233\",\"attachments\":[{\"thumbnail\":\"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/584519456_2092324498246980_4010162524339396826_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=NmqguU6hHrMQ7kNvwFvQXRL&_nc_oc=Adnkc3L7DgmDfPtbsVBc-0FUqjV-6QLRlEVUsp8fARP52r2xkqvHShMjKiycfbIVWnM&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=fKlEOLRvFV4TamlKkU4rLw&oh=00_Afg0PREltRwQUlHxQdbsKzevtnCVeuf5-cVjSrX-3A46lg&oe=6920A8F0\",\"__typename\":\"Photo\",\"photo_image\":{\"uri\":\"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/584519456_2092324498246980_4010162524339396826_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=NmqguU6hHrMQ7kNvwFvQXRL&_nc_oc=Adnkc3L7DgmDfPtbsVBc-0FUqjV-6QLRlEVUsp8fARP52r2xkqvHShMjKiycfbIVWnM&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=fKlEOLRvFV4TamlKkU4rLw&oh=00_Afg0PREltRwQUlHxQdbsKzevtnCVeuf5-cVjSrX-3A46lg&oe=6920A8F0\",\"height\":701,\"width\":526},\"__isMedia\":\"Photo\",\"accent_color\":\"FF837261\",\"photo_product_tags\":[],\"url\":\"https://www.facebook.com/photo.php?fbid=2092324494913647&set=gm.1965236944423233&type=3\",\"id\":\"2092324494913647\",\"ocrText\":\"May be an image of indoors\"}],\"likesCount\":166,\"sharesCount\":10,\"commentsCount\":83,\"topComments\":[{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1965236944423233/?comment_id=1965339627746298\",\"id\":\"Y29tbWVudDoxOTY1MjM2OTQ0NDIzMjMzXzE5NjUzMzk2Mjc3NDYyOTg=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2NTIzNjk0NDQyMzIzM18xOTY1MzM5NjI3NzQ2Mjk4\",\"date\":\"2025-11-17T07:49:02.000Z\",\"attachments\":[{\"__typename\":\"Photo\",\"blurred_image\":{\"uri\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/583793325_26080382108217556_1193065697933537512_n.jpg?stp=dst-jpg_fb30_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=pfoFAZWZTnMQ7kNvwHUxB7E&_nc_oc=AdlNF-d49zzaTxTjR4HQJVpeAeDtRHV22vCyVs8eAREtHyt4RO1lOgqq_0DVh0IjrTE&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=fKlEOLRvFV4TamlKkU4rLw&oh=00_AfiD9ncZ9Csi_CWYEbagb5GnAK-unloePcsdurCg1reH0w&oe=6920B50F\"},\"id\":\"26080382101550890\",\"cix_screen\":null,\"massive_image\":{\"width\":720,\"height\":960},\"image\":{\"uri\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/583793325_26080382108217556_1193065697933537512_n.jpg?stp=dst-jpg_p160x160_tt6&_nc_cat=109&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=pfoFAZWZTnMQ7kNvwHUxB7E&_nc_oc=AdlNF-d49zzaTxTjR4HQJVpeAeDtRHV22vCyVs8eAREtHyt4RO1lOgqq_0DVh0IjrTE&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=fKlEOLRvFV4TamlKkU4rLw&oh=00_AfjT4gcb8EbrvC5sZQNypS26uxQsHq7V2qRMGooscLlA9Q&oe=6920B50F\",\"width\":160,\"height\":213},\"ocrText\":\"May be an image of indoors, sliding door and text\"}],\"profileUrl\":\"https://www.facebook.com/atikan.darakai\",\"profilePicture\":\"https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/475716629_9960800203935670_6501633917850697861_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=_bWFaXBqJDkQ7kNvwHbuioD&_nc_oc=AdnXW2uR4pHRBBu7iRmbMBGd1VLslvTlHiuzg_2WmvIaPmtX4-5C9GH_5MzjN_Knhmk&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=fKlEOLRvFV4TamlKkU4rLw&oh=00_Afg2ktBs2HJZznLSk8q_Y2QQ0yfoxfiddyiT6kzI2eGplA&oe=6920AF05\",\"profileId\":\"100000173680225\",\"profileName\":\"Atikan DS\",\"likesCount\":\"0\",\"threadingDepth\":0},{\"commentUrl\":\"https://www.facebook.com/groups/221420775471534/permalink/1965236944423233/?comment_id=1965339221079672\",\"id\":\"Y29tbWVudDoxOTY1MjM2OTQ0NDIzMjMzXzE5NjUzMzkyMjEwNzk2NzI=\",\"feedbackId\":\"ZmVlZGJhY2s6MTk2NTIzNjk0NDQyMzIzM18xOTY1MzM5MjIxMDc5Njcy\",\"date\":\"2025-11-17T07:48:07.000Z\",\"text\":\"บัวลายไม้สีเข้มกว่าพื้นสัก 1 เฉดค่ะ\",\"profileUrl\":\"https://www.facebook.com/hasana.ummumusab\",\"profilePicture\":\"https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/477096802_10232668666573289_2385729129328999610_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=otwvEXiEV6EQ7kNvwHCkDjk&_nc_oc=AdmVAdFVzCazxEWjZq7fDIcogyNXfE0QcWDUEz-finxWr1JqKtvGd9sQ-1BagZoD7dE&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=fKlEOLRvFV4TamlKkU4rLw&oh=00_AfgGaZYlJHeWSFI4gKdFwYutixfsyH1eJzFHuH6w8UWFUQ&oe=692095E8\",\"profileId\":\"1659486732\",\"profileName\":\"Hasana Ummu Musab\",\"likesCount\":\"0\",\"threadingDepth\":0}],\"facebookId\":\"221420775471534\",\"groupTitle\":\"คนดีไซน์\",\"pageAdLibrary\":{\"is_business_page_active\":false,\"id\":\"659858453873692\"},\"inputUrl\":\"https://www.facebook.com/groups/221420775471534\"}",
+      "classification": {
+        "intents": [
+          "SHOW_OFF"
+        ],
+        "personas": [
+          "HOMEOWNER"
+        ],
+        "houseZones": [
+          "GENERAL"
+        ],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": "SHOW_OFF",
+        "materialCategories": []
+      }
+    },
+    {
+      "originalText": "#บ้านสวน",
+      "classification": {
+        "intents": [],
+        "personas": [],
+        "houseZones": [],
+        "painPoints": [],
+        "journeyStages": [],
+        "primaryIntent": null,
+        "materialCategories": []
+      }
+    }
+  ]
+}
