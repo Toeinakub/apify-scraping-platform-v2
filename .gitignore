@@ -42,7 +42,6 @@ next-env.d.ts
 
 /lib/generated/prisma
 
-# Documentation with sensitive data
+# Documentation with sensitive data (keep these private)
 PROJECT-DETAIL.md
 CLAUDE.md
-README.md
